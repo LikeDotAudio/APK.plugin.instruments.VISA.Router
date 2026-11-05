@@ -14,5 +14,5 @@ Every Router model this library drives, and how to drive it. Each model answers 
 
 | Model | Maker | get | set | nab | rig | do | Port |
 |---|---|---:|---:|---:|---:|---:|---:|
-| [3235](SDK/3235.md) | HP / Agilent / Keysight | 2 | 2 | 2 | 0 | 5 | 15100 |
-| [3235A](SDK/3235A.md) | HP / Agilent / Keysight | 2 | 2 | 2 | 0 | 5 | 15101 |
+| [3235](SDK/3235.md) | HP / Agilent / Keysight | 2 | 2 | 2 | 0 | 6 | 15100 |
+| [3235A](SDK/3235A.md) | HP / Agilent / Keysight | 2 | 2 | 2 | 0 | 6 | 15101 |

@@ -16,8 +16,8 @@ The **Router** instruments of the APK.audio bench, as one thing: 2 models, their
 
 | Model | Maker | What | Commands | Table | API |
 |---|---|---|---:|:---:|---|
-| [3235](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/3235.md) | HP / Agilent / Keysight | High-perf Switching Matrix | 9 | ✅ | :15100 |
-| [3235A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/3235A.md) | HP / Agilent / Keysight | High-perf Switching Matrix | 9 |  | :15101 |
+| [3235](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/3235.md) | HP / Agilent / Keysight | High-perf Switching Matrix | 10 | ✅ | :15100 |
+| [3235A](Documentation/%F0%9F%A7%A9Manual%20and%20Artifacts/SDK/3235A.md) | HP / Agilent / Keysight | High-perf Switching Matrix | 10 |  | :15101 |
 
 ## Layout
 
