@@ -4,8 +4,7 @@
   "type": "Router",
   "notes": "High-perf Switching Matrix",
   "declared": {
-    "resource": "TCPIP::44.44.44.222::gpib7,10::INSTR",
-    "network": "44.44.0.0/16",
+    "where": "Not here. WHICH box is a 3235 is an installation fact, declared by a person in INSTRUMENTS/_komand/declared.json (the Rosetta Stone override, owner 2026-11-05) — on this bench TCPIP::44.44.44.222::gpib7,10::INSTR. This block says how ANY declared 3235 behaves.",
     "listen_only": true,
     "why": "The 3235 takes commands and answers none of them, so `*IDN?` returns nothing and no scan can find it. Declared here instead: the orchestrator adds it to the write map from this sheet, and the heartbeat leaves it alone rather than marking a working matrix unreachable once a minute. Verified 2026-08-08 — this resource accepts `OPEN 000-999` and replies with nothing, which is correct.",
     "on_connect": [
