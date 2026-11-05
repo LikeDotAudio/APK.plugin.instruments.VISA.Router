@@ -38,6 +38,13 @@
       "description": "Card Reset",
       "group": "System Reset & Control"
     },
+    "Close_All": {
+      "scpi": "CLOSE 000-999",
+      "description": "Close every relay in the frame — everything connected to everything.",
+      "group": "System Reset & Control",
+      "subsystem": "Root",
+      "notes": "The other half of THE HOUR's chak-chuck (3235.gui `declared.on_the_hour`): every relay pulls in, then Open_All lets every one go, so the frame is heard to work at exactly the top of each hour and is left with nothing connected. Never sent on its own by anything automatic — left closed it ties every input to every output."
+    },
     "Open_All": {
       "scpi": "OPEN 000-999",
       "description": "Open every relay in the frame — nothing connected to anything.",

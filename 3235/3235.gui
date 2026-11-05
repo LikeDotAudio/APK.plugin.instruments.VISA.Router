@@ -10,7 +10,15 @@
     "why": "The 3235 takes commands and answers none of them, so `*IDN?` returns nothing and no scan can find it. Declared here instead: the orchestrator adds it to the write map from this sheet, and the heartbeat leaves it alone rather than marking a working matrix unreachable once a minute. Verified 2026-08-08 — this resource accepts `OPEN 000-999` and replies with nothing, which is correct.",
     "on_connect": [
       "Open_All"
-    ]
+    ],
+    "always_on": true,
+    "always_on_why": "Owner, 2026-11-04: assume the router is always on. It answers nothing, so the only evidence there ever was is its gateway's word — asking for that every sweep and every heartbeat made it slow and made it flap stale/declared. With always_on it is published present on this sheet's word: never asked, never demoted by a sweep, never decayed by the five-minute trust window.",
+    "on_the_hour": [
+      "Close_All",
+      "Open_All"
+    ],
+    "on_the_hour_gap_ms": 300,
+    "on_the_hour_why": "Owner, 2026-11-04: a chak-chuck at EXACTLY the top of the hour, as part of the hour's reset — every relay closes, then every relay opens, so you hear the frame work and it ends in its known state (nothing connected). Sent at hh:00:00 by the VISA plugin's own clock, past the hour's write hold; gap_ms is the pause between the two so the two clacks are heard apart."
   },
   "channel_format": {
     "pattern": "SCC",

@@ -5469,6 +5469,137 @@
       "fluid_ew": true
     },
     "blocks": {
+      "Status": {
+        "type": "OcaBlock",
+        "description": {
+          "En": "Status",
+          "Fr": "Status",
+          "De": "Status",
+          "Es": "Status",
+          "show_label": true
+        },
+        "layout_columns": 2,
+        "layout": {
+          "pady": 4,
+          "sticky": "nsew"
+        },
+        "notes": "Owner, 2026-11-04: the router is assumed always on (3235.gui `declared.always_on`) and chak-chucks at exactly the top of every hour (`declared.on_the_hour`: Close_All then Open_All). Both are said here, read off the device's own document, which the VISA plugin writes.",
+        "fields": {
+          "connection_status": {
+            "type": "_SmartLight",
+            "label": {
+              "En": "Reachable",
+              "Fr": "Reachable",
+              "De": "Reachable",
+              "Es": "Reachable"
+            },
+            "value_default": "unknown",
+            "device_state": "status",
+            "layout": {
+              "width": "100%"
+            }
+          },
+          "always_on": {
+            "type": "_TextInput",
+            "label": {
+              "En": "Always on",
+              "Fr": "Always on",
+              "De": "Always on",
+              "Es": "Always on"
+            },
+            "value_default": "---",
+            "device_state": "always_on",
+            "read_only": true,
+            "layout": {
+              "width": "100%",
+              "font": 13
+            },
+            "notes": "\"1\" while the sheet declares it always on: never asked, never demoted, never decayed."
+          },
+          "evidence": {
+            "type": "_TextInput",
+            "label": {
+              "En": "Why present",
+              "Fr": "Why present",
+              "De": "Why present",
+              "Es": "Why present"
+            },
+            "value_default": "---",
+            "device_state": "evidence",
+            "read_only": true,
+            "layout": {
+              "width": "100%",
+              "font": 13
+            }
+          },
+          "resource": {
+            "type": "_TextInput",
+            "label": {
+              "En": "VISA resource",
+              "Fr": "VISA resource",
+              "De": "VISA resource",
+              "Es": "VISA resource"
+            },
+            "value_default": "---",
+            "device_state": "resource",
+            "read_only": true,
+            "layout": {
+              "width": "100%",
+              "font": 13
+            }
+          },
+          "last_chime": {
+            "type": "_TextInput",
+            "label": {
+              "En": "Last hour chime",
+              "Fr": "Last hour chime",
+              "De": "Last hour chime",
+              "Es": "Last hour chime"
+            },
+            "value_default": "---",
+            "device_state": "last_chime",
+            "read_only": true,
+            "layout": {
+              "width": "100%",
+              "font": 13
+            },
+            "notes": "What went out at hh:00:00 — each command, ✗ on one that failed."
+          },
+          "last_chime_at": {
+            "type": "_TextInput",
+            "label": {
+              "En": "Chimed at (unix s)",
+              "Fr": "Chimed at (unix s)",
+              "De": "Chimed at (unix s)",
+              "Es": "Chimed at (unix s)"
+            },
+            "value_default": "---",
+            "device_state": "last_chime_at",
+            "read_only": true,
+            "layout": {
+              "width": "100%",
+              "font": 13
+            }
+          },
+          "last_chime_ok": {
+            "type": "_TextInput",
+            "label": {
+              "En": "Chime OK",
+              "Fr": "Chime OK",
+              "De": "Chime OK",
+              "Es": "Chime OK"
+            },
+            "value_default": "---",
+            "device_state": "last_chime_ok",
+            "read_only": true,
+            "layout": {
+              "width": "100%",
+              "font": 13
+            },
+            "notes": "\"1\" when every step of the chime went; \"0\" when one failed."
+          }
+        }
+      },
       "Instrument_Setup": {
         "type": "OcaBlock",
         "description": {
