@@ -73,12 +73,12 @@
     "do": "Zero-argument execution actions and trigger commands"
   },
   "summary": {
-    "total_commands": 9,
+    "total_commands": 10,
     "get_count": 2,
     "set_count": 2,
     "nab_count": 2,
     "rig_count": 0,
-    "do_count": 5
+    "do_count": 6
   },
   "endpoints": {
     "get": {
@@ -242,6 +242,27 @@
     },
     "rig": {},
     "do": {
+      "Close_All": {
+        "command": "Close_All",
+        "verb": "do",
+        "description": "Close every relay in the frame \u2014 everything connected to everything.",
+        "scpi": "CLOSE 000-999",
+        "subsystem": "Root",
+        "group": "System Reset & Control",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_All",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_All"
+          }
+        },
+        "unverified": false
+      },
       "Clear_State": {
         "command": "Clear_State",
         "verb": "do",
