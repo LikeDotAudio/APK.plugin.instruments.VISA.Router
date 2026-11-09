@@ -450,7 +450,7 @@
         "id": "edac-1",
         "name": "EDAC 1",
         "icon": "🎚️",
-        "slot": 4,
+        "slot": 6,
         "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
       },
       "id": "50.100.1.1.1.1",
@@ -463,7 +463,7 @@
         "fluid_ew": true
       },
       "blocks": {
-        "Card_4_Snake_Interface": {
+        "Card_6_Snake_Interface": {
           "type": "OcaBlock",
           "description": {
             "En": "EDAC 1 - Snake Channel Routing",
@@ -480,1966 +480,6 @@
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
               "handler": "set_snake_out_left",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "401",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 1 (L)",
-                        "Fr": "Ch 1",
-                        "De": "Ch 1",
-                        "Es": "Ch 1"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 1 (L)",
-                        "Fr": "Ch 1",
-                        "De": "Ch 1",
-                        "Es": "Ch 1"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 1 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 1 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 1 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 1 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "2": {
-                  "value": "402",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 3 (L)",
-                        "Fr": "Ch 3",
-                        "De": "Ch 3",
-                        "Es": "Ch 3"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 3 (L)",
-                        "Fr": "Ch 3",
-                        "De": "Ch 3",
-                        "Es": "Ch 3"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 3 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 3 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 3 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 3 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "3": {
-                  "value": "403",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 5 (L)",
-                        "Fr": "Ch 5",
-                        "De": "Ch 5",
-                        "Es": "Ch 5"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 5 (L)",
-                        "Fr": "Ch 5",
-                        "De": "Ch 5",
-                        "Es": "Ch 5"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 5 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 5 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 5 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 5 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "4": {
-                  "value": "404",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 7 (L)",
-                        "Fr": "Ch 7",
-                        "De": "Ch 7",
-                        "Es": "Ch 7"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 7 (L)",
-                        "Fr": "Ch 7",
-                        "De": "Ch 7",
-                        "Es": "Ch 7"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 7 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 7 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 7 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 7 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "5": {
-                  "value": "405",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 9 (L)",
-                        "Fr": "Ch 9",
-                        "De": "Ch 9",
-                        "Es": "Ch 9"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 9 (L)",
-                        "Fr": "Ch 9",
-                        "De": "Ch 9",
-                        "Es": "Ch 9"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 9 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 9 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 9 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 9 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "6": {
-                  "value": "406",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 11 (L)",
-                        "Fr": "Ch 11",
-                        "De": "Ch 11",
-                        "Es": "Ch 11"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 11 (L)",
-                        "Fr": "Ch 11",
-                        "De": "Ch 11",
-                        "Es": "Ch 11"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 11 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 11 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 11 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 11 Left/Odd OUT to Bus AB0"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            },
-            "Bus_AB2_Right_Out": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_out_right",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "421",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 2 (R)",
-                        "Fr": "Ch 2",
-                        "De": "Ch 2",
-                        "Es": "Ch 2"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 2 (R)",
-                        "Fr": "Ch 2",
-                        "De": "Ch 2",
-                        "Es": "Ch 2"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 2 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 2 D/Pair SORT vers Bus AB2",
-                    "De": "Snake Ch 2 R/Gerade AUS an Bus AB2",
-                    "Es": "Snake Ch 2 Der/Par SAL a Bus AB2"
-                  }
-                },
-                "2": {
-                  "value": "422",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 4 (R)",
-                        "Fr": "Ch 4",
-                        "De": "Ch 4",
-                        "Es": "Ch 4"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 4 (R)",
-                        "Fr": "Ch 4",
-                        "De": "Ch 4",
-                        "Es": "Ch 4"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 4 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 4 D/Pair SORT vers Bus AB2",
-                    "De": "Snake Ch 4 R/Gerade AUS an Bus AB2",
-                    "Es": "Snake Ch 4 Der/Par SAL a Bus AB2"
-                  }
-                },
-                "3": {
-                  "value": "423",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 6 (R)",
-                        "Fr": "Ch 6",
-                        "De": "Ch 6",
-                        "Es": "Ch 6"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 6 (R)",
-                        "Fr": "Ch 6",
-                        "De": "Ch 6",
-                        "Es": "Ch 6"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 6 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 6 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 6 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 6 Right/Even OUT to Bus AB2"
-                  }
-                },
-                "4": {
-                  "value": "424",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 8 (R)",
-                        "Fr": "Ch 8",
-                        "De": "Ch 8",
-                        "Es": "Ch 8"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 8 (R)",
-                        "Fr": "Ch 8",
-                        "De": "Ch 8",
-                        "Es": "Ch 8"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 8 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 8 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 8 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 8 Right/Even OUT to Bus AB2"
-                  }
-                },
-                "5": {
-                  "value": "425",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 10 (R)",
-                        "Fr": "Ch 10",
-                        "De": "Ch 10",
-                        "Es": "Ch 10"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 10 (R)",
-                        "Fr": "Ch 10",
-                        "De": "Ch 10",
-                        "Es": "Ch 10"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 10 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 10 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 10 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 10 Right/Even OUT to Bus AB2"
-                  }
-                },
-                "6": {
-                  "value": "426",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 12 (R)",
-                        "Fr": "Ch 12",
-                        "De": "Ch 12",
-                        "Es": "Ch 12"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 12 (R)",
-                        "Fr": "Ch 12",
-                        "De": "Ch 12",
-                        "Es": "Ch 12"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 12 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 12 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 12 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 12 Right/Even OUT to Bus AB2"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            },
-            "Bus_AB1_Left_In": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_in_left",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "411",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 13 (L)",
-                        "Fr": "Ch 13",
-                        "De": "Ch 13",
-                        "Es": "Ch 13"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 13 (L)",
-                        "Fr": "Ch 13",
-                        "De": "Ch 13",
-                        "Es": "Ch 13"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 13 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 13 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 13 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 13 Left/Odd IN from Bus AB1"
-                  }
-                },
-                "2": {
-                  "value": "412",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 15 (L)",
-                        "Fr": "Ch 15",
-                        "De": "Ch 15",
-                        "Es": "Ch 15"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 15 (L)",
-                        "Fr": "Ch 15",
-                        "De": "Ch 15",
-                        "Es": "Ch 15"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 15 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 15 G/Impair ENT de Bus AB1",
-                    "De": "Snake Ch 15 L/Ungerade EIN von Bus AB1",
-                    "Es": "Snake Ch 15 Izq/Impar ENT de Bus AB1"
-                  }
-                },
-                "3": {
-                  "value": "413",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 17 (L)",
-                        "Fr": "Ch 17",
-                        "De": "Ch 17",
-                        "Es": "Ch 17"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 17 (L)",
-                        "Fr": "Ch 17",
-                        "De": "Ch 17",
-                        "Es": "Ch 17"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 17 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 17 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 17 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 17 Left/Odd IN from Bus AB1"
-                  }
-                },
-                "4": {
-                  "value": "414",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 19 (L)",
-                        "Fr": "Ch 19",
-                        "De": "Ch 19",
-                        "Es": "Ch 19"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 19 (L)",
-                        "Fr": "Ch 19",
-                        "De": "Ch 19",
-                        "Es": "Ch 19"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 19 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 19 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 19 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 19 Left/Odd IN from Bus AB1"
-                  }
-                },
-                "5": {
-                  "value": "415",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 21 (L)",
-                        "Fr": "Ch 21",
-                        "De": "Ch 21",
-                        "Es": "Ch 21"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 21 (L)",
-                        "Fr": "Ch 21",
-                        "De": "Ch 21",
-                        "Es": "Ch 21"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 21 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 21 G/Impair ENT de Bus AB1",
-                    "De": "Snake Ch 21 L/Ungerade EIN von Bus AB1",
-                    "Es": "Snake Ch 21 Izq/Impar ENT de Bus AB1"
-                  }
-                },
-                "6": {
-                  "value": "416",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 23 (L)",
-                        "Fr": "Ch 23",
-                        "De": "Ch 23",
-                        "Es": "Ch 23"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 23 (L)",
-                        "Fr": "Ch 23",
-                        "De": "Ch 23",
-                        "Es": "Ch 23"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 23 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 23 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 23 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 23 Left/Odd IN from Bus AB1"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            },
-            "Bus_AB3_Right_In": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_in_right",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "431",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 14 (R)",
-                        "Fr": "Ch 14",
-                        "De": "Ch 14",
-                        "Es": "Ch 14"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 14 (R)",
-                        "Fr": "Ch 14",
-                        "De": "Ch 14",
-                        "Es": "Ch 14"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 14 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 14 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 14 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 14 Right/Even IN from Bus AB3"
-                  }
-                },
-                "2": {
-                  "value": "432",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 16 (R)",
-                        "Fr": "Ch 16",
-                        "De": "Ch 16",
-                        "Es": "Ch 16"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 16 (R)",
-                        "Fr": "Ch 16",
-                        "De": "Ch 16",
-                        "Es": "Ch 16"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 16 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 16 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 16 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 16 Right/Even IN from Bus AB3"
-                  }
-                },
-                "3": {
-                  "value": "433",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 18 (R)",
-                        "Fr": "Ch 18",
-                        "De": "Ch 18",
-                        "Es": "Ch 18"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 18 (R)",
-                        "Fr": "Ch 18",
-                        "De": "Ch 18",
-                        "Es": "Ch 18"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 18 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 18 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 18 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 18 Right/Even IN from Bus AB3"
-                  }
-                },
-                "4": {
-                  "value": "434",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 20 (R)",
-                        "Fr": "Ch 20",
-                        "De": "Ch 20",
-                        "Es": "Ch 20"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 20 (R)",
-                        "Fr": "Ch 20",
-                        "De": "Ch 20",
-                        "Es": "Ch 20"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 20 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 20 D/Pair ENT de Bus AB3",
-                    "De": "Snake Ch 20 R/Gerade EIN von Bus AB3",
-                    "Es": "Snake Ch 20 Der/Par ENT de Bus AB3"
-                  }
-                },
-                "5": {
-                  "value": "435",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 22 (R)",
-                        "Fr": "Ch 22",
-                        "De": "Ch 22",
-                        "Es": "Ch 22"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 22 (R)",
-                        "Fr": "Ch 22",
-                        "De": "Ch 22",
-                        "Es": "Ch 22"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 22 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 22 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 22 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 22 Right/Even IN from Bus AB3"
-                  }
-                },
-                "6": {
-                  "value": "436",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 24 (R)",
-                        "Fr": "Ch 24",
-                        "De": "Ch 24",
-                        "Es": "Ch 24"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 24 (R)",
-                        "Fr": "Ch 24",
-                        "De": "Ch 24",
-                        "Es": "Ch 24"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 24 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 24 D/Pair ENT de Bus AB3",
-                    "De": "Snake Ch 24 R/Gerade EIN von Bus AB3",
-                    "Es": "Snake Ch 24 Der/Par ENT de Bus AB3"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            }
-          }
-        }
-      }
-    },
-    "EDAC_13_24": {
-      "type": "OcaBin",
-      "card": {
-        "id": "edac-2",
-        "name": "EDAC 2",
-        "icon": "🎚️",
-        "slot": 5,
-        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
-      },
-      "id": "50.100.1.1.1.13",
-      "geometry": {
-        "anchor": "NSEW"
-      },
-      "behavior": {
-        "overflow_ns": "auto",
-        "overflow_ew": "auto",
-        "fluid_ew": true
-      },
-      "blocks": {
-        "Card_5_Snake_Interface": {
-          "type": "OcaBlock",
-          "description": {
-            "En": "EDAC 2 - Snake Channel Routing",
-            "Fr": "EDAC 2 - Snake Canal Routing",
-            "De": "EDAC 2 - Snake Kanal Routing",
-            "Es": "EDAC 2 - Snake Canal Routing",
-            "show_label": false
-          },
-          "layout": {
-            "sticky": ""
-          },
-          "fields": {
-            "Bus_AB0_Left_Out": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_out_left",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "501",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 1 (L)",
-                        "Fr": "Ch 1",
-                        "De": "Ch 1",
-                        "Es": "Ch 1"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 1 (L)",
-                        "Fr": "Ch 1",
-                        "De": "Ch 1",
-                        "Es": "Ch 1"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 1 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 1 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 1 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 1 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "2": {
-                  "value": "502",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 3 (L)",
-                        "Fr": "Ch 3",
-                        "De": "Ch 3",
-                        "Es": "Ch 3"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 3 (L)",
-                        "Fr": "Ch 3",
-                        "De": "Ch 3",
-                        "Es": "Ch 3"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 3 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 3 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 3 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 3 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "3": {
-                  "value": "503",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 5 (L)",
-                        "Fr": "Ch 5",
-                        "De": "Ch 5",
-                        "Es": "Ch 5"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 5 (L)",
-                        "Fr": "Ch 5",
-                        "De": "Ch 5",
-                        "Es": "Ch 5"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 5 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 5 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 5 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 5 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "4": {
-                  "value": "504",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 7 (L)",
-                        "Fr": "Ch 7",
-                        "De": "Ch 7",
-                        "Es": "Ch 7"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 7 (L)",
-                        "Fr": "Ch 7",
-                        "De": "Ch 7",
-                        "Es": "Ch 7"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 7 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 7 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 7 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 7 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "5": {
-                  "value": "505",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 9 (L)",
-                        "Fr": "Ch 9",
-                        "De": "Ch 9",
-                        "Es": "Ch 9"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 9 (L)",
-                        "Fr": "Ch 9",
-                        "De": "Ch 9",
-                        "Es": "Ch 9"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 9 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 9 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 9 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 9 Left/Odd OUT to Bus AB0"
-                  }
-                },
-                "6": {
-                  "value": "506",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 11 (L)",
-                        "Fr": "Ch 11",
-                        "De": "Ch 11",
-                        "Es": "Ch 11"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 11 (L)",
-                        "Fr": "Ch 11",
-                        "De": "Ch 11",
-                        "Es": "Ch 11"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 11 Left/Odd OUT to Bus AB0",
-                    "Fr": "Snake Ch 11 Left/Odd OUT to Bus AB0",
-                    "De": "Snake Ch 11 Left/Odd OUT to Bus AB0",
-                    "Es": "Snake Ch 11 Left/Odd OUT to Bus AB0"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            },
-            "Bus_AB2_Right_Out": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_out_right",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "521",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 2 (R)",
-                        "Fr": "Ch 2",
-                        "De": "Ch 2",
-                        "Es": "Ch 2"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 2 (R)",
-                        "Fr": "Ch 2",
-                        "De": "Ch 2",
-                        "Es": "Ch 2"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 2 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 2 D/Pair SORT vers Bus AB2",
-                    "De": "Snake Ch 2 R/Gerade AUS an Bus AB2",
-                    "Es": "Snake Ch 2 Der/Par SAL a Bus AB2"
-                  }
-                },
-                "2": {
-                  "value": "522",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 4 (R)",
-                        "Fr": "Ch 4",
-                        "De": "Ch 4",
-                        "Es": "Ch 4"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 4 (R)",
-                        "Fr": "Ch 4",
-                        "De": "Ch 4",
-                        "Es": "Ch 4"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 4 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 4 D/Pair SORT vers Bus AB2",
-                    "De": "Snake Ch 4 R/Gerade AUS an Bus AB2",
-                    "Es": "Snake Ch 4 Der/Par SAL a Bus AB2"
-                  }
-                },
-                "3": {
-                  "value": "523",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 6 (R)",
-                        "Fr": "Ch 6",
-                        "De": "Ch 6",
-                        "Es": "Ch 6"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 6 (R)",
-                        "Fr": "Ch 6",
-                        "De": "Ch 6",
-                        "Es": "Ch 6"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 6 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 6 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 6 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 6 Right/Even OUT to Bus AB2"
-                  }
-                },
-                "4": {
-                  "value": "524",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 8 (R)",
-                        "Fr": "Ch 8",
-                        "De": "Ch 8",
-                        "Es": "Ch 8"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 8 (R)",
-                        "Fr": "Ch 8",
-                        "De": "Ch 8",
-                        "Es": "Ch 8"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 8 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 8 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 8 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 8 Right/Even OUT to Bus AB2"
-                  }
-                },
-                "5": {
-                  "value": "525",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 10 (R)",
-                        "Fr": "Ch 10",
-                        "De": "Ch 10",
-                        "Es": "Ch 10"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 10 (R)",
-                        "Fr": "Ch 10",
-                        "De": "Ch 10",
-                        "Es": "Ch 10"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 10 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 10 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 10 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 10 Right/Even OUT to Bus AB2"
-                  }
-                },
-                "6": {
-                  "value": "526",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 12 (R)",
-                        "Fr": "Ch 12",
-                        "De": "Ch 12",
-                        "Es": "Ch 12"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 12 (R)",
-                        "Fr": "Ch 12",
-                        "De": "Ch 12",
-                        "Es": "Ch 12"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 12 Right/Even OUT to Bus AB2",
-                    "Fr": "Snake Ch 12 Right/Even OUT to Bus AB2",
-                    "De": "Snake Ch 12 Right/Even OUT to Bus AB2",
-                    "Es": "Snake Ch 12 Right/Even OUT to Bus AB2"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            },
-            "Bus_AB1_Left_In": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_in_left",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "511",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 13 (L)",
-                        "Fr": "Ch 13",
-                        "De": "Ch 13",
-                        "Es": "Ch 13"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 13 (L)",
-                        "Fr": "Ch 13",
-                        "De": "Ch 13",
-                        "Es": "Ch 13"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 13 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 13 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 13 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 13 Left/Odd IN from Bus AB1"
-                  }
-                },
-                "2": {
-                  "value": "512",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 15 (L)",
-                        "Fr": "Ch 15",
-                        "De": "Ch 15",
-                        "Es": "Ch 15"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 15 (L)",
-                        "Fr": "Ch 15",
-                        "De": "Ch 15",
-                        "Es": "Ch 15"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 15 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 15 G/Impair ENT de Bus AB1",
-                    "De": "Snake Ch 15 L/Ungerade EIN von Bus AB1",
-                    "Es": "Snake Ch 15 Izq/Impar ENT de Bus AB1"
-                  }
-                },
-                "3": {
-                  "value": "513",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 17 (L)",
-                        "Fr": "Ch 17",
-                        "De": "Ch 17",
-                        "Es": "Ch 17"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 17 (L)",
-                        "Fr": "Ch 17",
-                        "De": "Ch 17",
-                        "Es": "Ch 17"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 17 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 17 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 17 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 17 Left/Odd IN from Bus AB1"
-                  }
-                },
-                "4": {
-                  "value": "514",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 19 (L)",
-                        "Fr": "Ch 19",
-                        "De": "Ch 19",
-                        "Es": "Ch 19"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 19 (L)",
-                        "Fr": "Ch 19",
-                        "De": "Ch 19",
-                        "Es": "Ch 19"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 19 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 19 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 19 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 19 Left/Odd IN from Bus AB1"
-                  }
-                },
-                "5": {
-                  "value": "515",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 21 (L)",
-                        "Fr": "Ch 21",
-                        "De": "Ch 21",
-                        "Es": "Ch 21"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 21 (L)",
-                        "Fr": "Ch 21",
-                        "De": "Ch 21",
-                        "Es": "Ch 21"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 21 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 21 G/Impair ENT de Bus AB1",
-                    "De": "Snake Ch 21 L/Ungerade EIN von Bus AB1",
-                    "Es": "Snake Ch 21 Izq/Impar ENT de Bus AB1"
-                  }
-                },
-                "6": {
-                  "value": "516",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 23 (L)",
-                        "Fr": "Ch 23",
-                        "De": "Ch 23",
-                        "Es": "Ch 23"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 23 (L)",
-                        "Fr": "Ch 23",
-                        "De": "Ch 23",
-                        "Es": "Ch 23"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 23 Left/Odd IN from Bus AB1",
-                    "Fr": "Snake Ch 23 Left/Odd IN from Bus AB1",
-                    "De": "Snake Ch 23 Left/Odd IN from Bus AB1",
-                    "Es": "Snake Ch 23 Left/Odd IN from Bus AB1"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            },
-            "Bus_AB3_Right_In": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_in_right",
-              "layout": {
-                "height": 30,
-                "alpha": 0.9,
-                "max_cols": 6,
-                "width": "100%",
-                "font": 14,
-                "padx": 0,
-                "pady": 0
-              },
-              "style": {
-                "active": {
-                  "font_style": "bold",
-                  "font_size": null,
-                  "text_color": "#FF9900",
-                  "bg_color": "#000000",
-                  "border_color": "#FF9900",
-                  "border_thickness": 2,
-                  "glow_intensity": 50
-                },
-                "inactive": {
-                  "font_style": "normal",
-                  "font_size": null,
-                  "text_color": "#888888",
-                  "bg_color": "#2b2b2b",
-                  "border_color": "#555555",
-                  "border_thickness": 2,
-                  "glow_intensity": 0
-                }
-              },
-              "options": {
-                "1": {
-                  "value": "531",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 14 (R)",
-                        "Fr": "Ch 14",
-                        "De": "Ch 14",
-                        "Es": "Ch 14"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 14 (R)",
-                        "Fr": "Ch 14",
-                        "De": "Ch 14",
-                        "Es": "Ch 14"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 14 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 14 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 14 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 14 Right/Even IN from Bus AB3"
-                  }
-                },
-                "2": {
-                  "value": "532",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 16 (R)",
-                        "Fr": "Ch 16",
-                        "De": "Ch 16",
-                        "Es": "Ch 16"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 16 (R)",
-                        "Fr": "Ch 16",
-                        "De": "Ch 16",
-                        "Es": "Ch 16"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 16 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 16 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 16 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 16 Right/Even IN from Bus AB3"
-                  }
-                },
-                "3": {
-                  "value": "533",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 18 (R)",
-                        "Fr": "Ch 18",
-                        "De": "Ch 18",
-                        "Es": "Ch 18"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 18 (R)",
-                        "Fr": "Ch 18",
-                        "De": "Ch 18",
-                        "Es": "Ch 18"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 18 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 18 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 18 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 18 Right/Even IN from Bus AB3"
-                  }
-                },
-                "4": {
-                  "value": "534",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 20 (R)",
-                        "Fr": "Ch 20",
-                        "De": "Ch 20",
-                        "Es": "Ch 20"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 20 (R)",
-                        "Fr": "Ch 20",
-                        "De": "Ch 20",
-                        "Es": "Ch 20"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 20 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 20 D/Pair ENT de Bus AB3",
-                    "De": "Snake Ch 20 R/Gerade EIN von Bus AB3",
-                    "Es": "Snake Ch 20 Der/Par ENT de Bus AB3"
-                  }
-                },
-                "5": {
-                  "value": "535",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 22 (R)",
-                        "Fr": "Ch 22",
-                        "De": "Ch 22",
-                        "Es": "Ch 22"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 22 (R)",
-                        "Fr": "Ch 22",
-                        "De": "Ch 22",
-                        "Es": "Ch 22"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 22 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 22 Right/Even IN from Bus AB3",
-                    "De": "Snake Ch 22 Right/Even IN from Bus AB3",
-                    "Es": "Snake Ch 22 Right/Even IN from Bus AB3"
-                  }
-                },
-                "6": {
-                  "value": "536",
-                  "label": {
-                    "active": {
-                      "text": {
-                        "En": "Ch 24 (R)",
-                        "Fr": "Ch 24",
-                        "De": "Ch 24",
-                        "Es": "Ch 24"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    },
-                    "inactive": {
-                      "text": {
-                        "En": "Ch 24 (R)",
-                        "Fr": "Ch 24",
-                        "De": "Ch 24",
-                        "Es": "Ch 24"
-                      },
-                      "text_size": 12,
-                      "text_color": "#cccccc"
-                    }
-                  },
-                  "description": {
-                    "En": "Snake Ch 24 Right/Even IN from Bus AB3",
-                    "Fr": "Snake Ch 24 D/Pair ENT de Bus AB3",
-                    "De": "Snake Ch 24 R/Gerade EIN von Bus AB3",
-                    "Es": "Snake Ch 24 Der/Par ENT de Bus AB3"
-                  }
-                }
-              },
-              "selection_mode": "radio",
-              "domain": {
-                "Allow_Null": true,
-                "Allow_Multi_Alt_Select": true
-              },
-              "komand_handler": {
-                "enable": true,
-                "komand_type": "set",
-                "sub_path": "Routing",
-                "command": "Close_Channels",
-                "input_name": "channel_list",
-                "converter": ""
-              },
-              "komand_seed": false
-            }
-          }
-        }
-      }
-    },
-    "EDAC_25_36": {
-      "type": "OcaBin",
-      "card": {
-        "id": "edac-3",
-        "name": "EDAC 3",
-        "icon": "🎚️",
-        "slot": 6,
-        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
-      },
-      "id": "50.100.1.1.1.25",
-      "geometry": {
-        "anchor": "NSEW"
-      },
-      "behavior": {
-        "overflow_ns": "auto",
-        "overflow_ew": "auto",
-        "fluid_ew": true
-      },
-      "blocks": {
-        "Card_6_Snake_Interface": {
-          "type": "OcaBlock",
-          "description": {
-            "En": "EDAC 3 - Snake Channel Routing",
-            "Fr": "EDAC 3 - Snake Canal Routing",
-            "De": "EDAC 3 - Snake Kanal Routing",
-            "Es": "EDAC 3 - Snake Canal Routing",
-            "show_label": false
-          },
-          "layout": {
-            "sticky": ""
-          },
-          "fields": {
-            "Bus_AB0_Left_Out": {
-              "type": "_GuiButtonToggler",
-              "AES70": "OcaSwitch",
-              "handler": "set_snake_out_left_c5",
               "layout": {
                 "height": 30,
                 "alpha": 0.9,
@@ -2675,7 +715,7 @@
             "Bus_AB2_Right_Out": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_out_right_c5",
+              "handler": "set_snake_out_right",
               "layout": {
                 "height": 30,
                 "alpha": 0.9,
@@ -2911,7 +951,7 @@
             "Bus_AB1_Left_In": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_in_left_c5",
+              "handler": "set_snake_in_left",
               "layout": {
                 "height": 30,
                 "alpha": 0.9,
@@ -3147,7 +1187,7 @@
             "Bus_AB3_Right_In": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_in_right_c5",
+              "handler": "set_snake_in_right",
               "layout": {
                 "height": 30,
                 "alpha": 0.9,
@@ -3383,19 +1423,17 @@
           }
         }
       }
-    }
-  },
-  "Peripherals": {
-    "Peripherals": {
+    },
+    "EDAC_13_24": {
       "type": "OcaBin",
       "card": {
-        "id": "aux",
-        "name": "Aux",
-        "icon": "🎛️",
-        "slot": 8,
-        "about": "bench gear, DUT and monitors; stereo: left and right, send and return"
+        "id": "edac-2",
+        "name": "EDAC 2",
+        "icon": "🎚️",
+        "slot": 7,
+        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
       },
-      "id": "50.100.1.1.0.2",
+      "id": "50.100.1.1.1.13",
       "geometry": {
         "anchor": "NSEW"
       },
@@ -3405,31 +1443,1011 @@
         "fluid_ew": true
       },
       "blocks": {
-        "Card_8_Peripheral_Interface": {
+        "Card_7_Snake_Interface": {
           "type": "OcaBlock",
           "description": {
-            "En": "Card 8 - Peripheral Channel Routing",
-            "Fr": "Card 8 - Peripheral Canal Routing",
-            "De": "Card 8 - Peripheral Kanal Routing",
-            "Es": "Card 8 - Peripheral Canal Routing",
+            "En": "EDAC 2 - Snake Channel Routing",
+            "Fr": "EDAC 2 - Snake Canal Routing",
+            "De": "EDAC 2 - Snake Kanal Routing",
+            "Es": "EDAC 2 - Snake Canal Routing",
             "show_label": false
           },
           "layout": {
             "sticky": ""
           },
           "fields": {
-            "Bus_AB00_Periph_Left_Out": {
+            "Bus_AB0_Left_Out": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_periph_out_left_c8",
+              "handler": "set_snake_out_left",
               "layout": {
                 "height": 30,
-                "max_cols": 5,
+                "alpha": 0.9,
+                "max_cols": 6,
                 "width": "100%",
                 "font": 14,
                 "padx": 0,
-                "pady": 0,
-                "alpha": 0.9
+                "pady": 0
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF9900",
+                  "bg_color": "#000000",
+                  "border_color": "#FF9900",
+                  "border_thickness": 2,
+                  "glow_intensity": 50
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "options": {
+                "1": {
+                  "value": "701",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 1 (L)",
+                        "Fr": "Ch 1",
+                        "De": "Ch 1",
+                        "Es": "Ch 1"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 1 (L)",
+                        "Fr": "Ch 1",
+                        "De": "Ch 1",
+                        "Es": "Ch 1"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 1 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 1 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 1 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 1 Left/Odd OUT to Bus AB0"
+                  }
+                },
+                "2": {
+                  "value": "702",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 3 (L)",
+                        "Fr": "Ch 3",
+                        "De": "Ch 3",
+                        "Es": "Ch 3"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 3 (L)",
+                        "Fr": "Ch 3",
+                        "De": "Ch 3",
+                        "Es": "Ch 3"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 3 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 3 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 3 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 3 Left/Odd OUT to Bus AB0"
+                  }
+                },
+                "3": {
+                  "value": "703",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 5 (L)",
+                        "Fr": "Ch 5",
+                        "De": "Ch 5",
+                        "Es": "Ch 5"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 5 (L)",
+                        "Fr": "Ch 5",
+                        "De": "Ch 5",
+                        "Es": "Ch 5"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 5 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 5 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 5 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 5 Left/Odd OUT to Bus AB0"
+                  }
+                },
+                "4": {
+                  "value": "704",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 7 (L)",
+                        "Fr": "Ch 7",
+                        "De": "Ch 7",
+                        "Es": "Ch 7"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 7 (L)",
+                        "Fr": "Ch 7",
+                        "De": "Ch 7",
+                        "Es": "Ch 7"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 7 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 7 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 7 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 7 Left/Odd OUT to Bus AB0"
+                  }
+                },
+                "5": {
+                  "value": "705",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 9 (L)",
+                        "Fr": "Ch 9",
+                        "De": "Ch 9",
+                        "Es": "Ch 9"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 9 (L)",
+                        "Fr": "Ch 9",
+                        "De": "Ch 9",
+                        "Es": "Ch 9"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 9 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 9 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 9 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 9 Left/Odd OUT to Bus AB0"
+                  }
+                },
+                "6": {
+                  "value": "706",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 11 (L)",
+                        "Fr": "Ch 11",
+                        "De": "Ch 11",
+                        "Es": "Ch 11"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 11 (L)",
+                        "Fr": "Ch 11",
+                        "De": "Ch 11",
+                        "Es": "Ch 11"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 11 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 11 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 11 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 11 Left/Odd OUT to Bus AB0"
+                  }
+                }
+              },
+              "selection_mode": "radio",
+              "domain": {
+                "Allow_Null": true,
+                "Allow_Multi_Alt_Select": true
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "set",
+                "sub_path": "Routing",
+                "command": "Close_Channels",
+                "input_name": "channel_list",
+                "converter": ""
+              },
+              "komand_seed": false
+            },
+            "Bus_AB2_Right_Out": {
+              "type": "_GuiButtonToggler",
+              "AES70": "OcaSwitch",
+              "handler": "set_snake_out_right",
+              "layout": {
+                "height": 30,
+                "alpha": 0.9,
+                "max_cols": 6,
+                "width": "100%",
+                "font": 14,
+                "padx": 0,
+                "pady": 0
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF9900",
+                  "bg_color": "#000000",
+                  "border_color": "#FF9900",
+                  "border_thickness": 2,
+                  "glow_intensity": 50
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "options": {
+                "1": {
+                  "value": "721",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 2 (R)",
+                        "Fr": "Ch 2",
+                        "De": "Ch 2",
+                        "Es": "Ch 2"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 2 (R)",
+                        "Fr": "Ch 2",
+                        "De": "Ch 2",
+                        "Es": "Ch 2"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 2 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 2 D/Pair SORT vers Bus AB2",
+                    "De": "Snake Ch 2 R/Gerade AUS an Bus AB2",
+                    "Es": "Snake Ch 2 Der/Par SAL a Bus AB2"
+                  }
+                },
+                "2": {
+                  "value": "722",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 4 (R)",
+                        "Fr": "Ch 4",
+                        "De": "Ch 4",
+                        "Es": "Ch 4"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 4 (R)",
+                        "Fr": "Ch 4",
+                        "De": "Ch 4",
+                        "Es": "Ch 4"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 4 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 4 D/Pair SORT vers Bus AB2",
+                    "De": "Snake Ch 4 R/Gerade AUS an Bus AB2",
+                    "Es": "Snake Ch 4 Der/Par SAL a Bus AB2"
+                  }
+                },
+                "3": {
+                  "value": "723",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 6 (R)",
+                        "Fr": "Ch 6",
+                        "De": "Ch 6",
+                        "Es": "Ch 6"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 6 (R)",
+                        "Fr": "Ch 6",
+                        "De": "Ch 6",
+                        "Es": "Ch 6"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 6 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 6 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 6 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 6 Right/Even OUT to Bus AB2"
+                  }
+                },
+                "4": {
+                  "value": "724",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 8 (R)",
+                        "Fr": "Ch 8",
+                        "De": "Ch 8",
+                        "Es": "Ch 8"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 8 (R)",
+                        "Fr": "Ch 8",
+                        "De": "Ch 8",
+                        "Es": "Ch 8"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 8 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 8 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 8 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 8 Right/Even OUT to Bus AB2"
+                  }
+                },
+                "5": {
+                  "value": "725",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 10 (R)",
+                        "Fr": "Ch 10",
+                        "De": "Ch 10",
+                        "Es": "Ch 10"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 10 (R)",
+                        "Fr": "Ch 10",
+                        "De": "Ch 10",
+                        "Es": "Ch 10"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 10 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 10 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 10 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 10 Right/Even OUT to Bus AB2"
+                  }
+                },
+                "6": {
+                  "value": "726",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 12 (R)",
+                        "Fr": "Ch 12",
+                        "De": "Ch 12",
+                        "Es": "Ch 12"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 12 (R)",
+                        "Fr": "Ch 12",
+                        "De": "Ch 12",
+                        "Es": "Ch 12"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 12 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 12 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 12 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 12 Right/Even OUT to Bus AB2"
+                  }
+                }
+              },
+              "selection_mode": "radio",
+              "domain": {
+                "Allow_Null": true,
+                "Allow_Multi_Alt_Select": true
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "set",
+                "sub_path": "Routing",
+                "command": "Close_Channels",
+                "input_name": "channel_list",
+                "converter": ""
+              },
+              "komand_seed": false
+            },
+            "Bus_AB1_Left_In": {
+              "type": "_GuiButtonToggler",
+              "AES70": "OcaSwitch",
+              "handler": "set_snake_in_left",
+              "layout": {
+                "height": 30,
+                "alpha": 0.9,
+                "max_cols": 6,
+                "width": "100%",
+                "font": 14,
+                "padx": 0,
+                "pady": 0
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF9900",
+                  "bg_color": "#000000",
+                  "border_color": "#FF9900",
+                  "border_thickness": 2,
+                  "glow_intensity": 50
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "options": {
+                "1": {
+                  "value": "711",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 13 (L)",
+                        "Fr": "Ch 13",
+                        "De": "Ch 13",
+                        "Es": "Ch 13"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 13 (L)",
+                        "Fr": "Ch 13",
+                        "De": "Ch 13",
+                        "Es": "Ch 13"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 13 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 13 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 13 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 13 Left/Odd IN from Bus AB1"
+                  }
+                },
+                "2": {
+                  "value": "712",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 15 (L)",
+                        "Fr": "Ch 15",
+                        "De": "Ch 15",
+                        "Es": "Ch 15"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 15 (L)",
+                        "Fr": "Ch 15",
+                        "De": "Ch 15",
+                        "Es": "Ch 15"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 15 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 15 G/Impair ENT de Bus AB1",
+                    "De": "Snake Ch 15 L/Ungerade EIN von Bus AB1",
+                    "Es": "Snake Ch 15 Izq/Impar ENT de Bus AB1"
+                  }
+                },
+                "3": {
+                  "value": "713",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 17 (L)",
+                        "Fr": "Ch 17",
+                        "De": "Ch 17",
+                        "Es": "Ch 17"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 17 (L)",
+                        "Fr": "Ch 17",
+                        "De": "Ch 17",
+                        "Es": "Ch 17"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 17 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 17 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 17 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 17 Left/Odd IN from Bus AB1"
+                  }
+                },
+                "4": {
+                  "value": "714",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 19 (L)",
+                        "Fr": "Ch 19",
+                        "De": "Ch 19",
+                        "Es": "Ch 19"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 19 (L)",
+                        "Fr": "Ch 19",
+                        "De": "Ch 19",
+                        "Es": "Ch 19"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 19 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 19 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 19 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 19 Left/Odd IN from Bus AB1"
+                  }
+                },
+                "5": {
+                  "value": "715",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 21 (L)",
+                        "Fr": "Ch 21",
+                        "De": "Ch 21",
+                        "Es": "Ch 21"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 21 (L)",
+                        "Fr": "Ch 21",
+                        "De": "Ch 21",
+                        "Es": "Ch 21"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 21 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 21 G/Impair ENT de Bus AB1",
+                    "De": "Snake Ch 21 L/Ungerade EIN von Bus AB1",
+                    "Es": "Snake Ch 21 Izq/Impar ENT de Bus AB1"
+                  }
+                },
+                "6": {
+                  "value": "716",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 23 (L)",
+                        "Fr": "Ch 23",
+                        "De": "Ch 23",
+                        "Es": "Ch 23"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 23 (L)",
+                        "Fr": "Ch 23",
+                        "De": "Ch 23",
+                        "Es": "Ch 23"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 23 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 23 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 23 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 23 Left/Odd IN from Bus AB1"
+                  }
+                }
+              },
+              "selection_mode": "radio",
+              "domain": {
+                "Allow_Null": true,
+                "Allow_Multi_Alt_Select": true
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "set",
+                "sub_path": "Routing",
+                "command": "Close_Channels",
+                "input_name": "channel_list",
+                "converter": ""
+              },
+              "komand_seed": false
+            },
+            "Bus_AB3_Right_In": {
+              "type": "_GuiButtonToggler",
+              "AES70": "OcaSwitch",
+              "handler": "set_snake_in_right",
+              "layout": {
+                "height": 30,
+                "alpha": 0.9,
+                "max_cols": 6,
+                "width": "100%",
+                "font": 14,
+                "padx": 0,
+                "pady": 0
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF9900",
+                  "bg_color": "#000000",
+                  "border_color": "#FF9900",
+                  "border_thickness": 2,
+                  "glow_intensity": 50
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "options": {
+                "1": {
+                  "value": "731",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 14 (R)",
+                        "Fr": "Ch 14",
+                        "De": "Ch 14",
+                        "Es": "Ch 14"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 14 (R)",
+                        "Fr": "Ch 14",
+                        "De": "Ch 14",
+                        "Es": "Ch 14"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 14 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 14 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 14 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 14 Right/Even IN from Bus AB3"
+                  }
+                },
+                "2": {
+                  "value": "732",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 16 (R)",
+                        "Fr": "Ch 16",
+                        "De": "Ch 16",
+                        "Es": "Ch 16"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 16 (R)",
+                        "Fr": "Ch 16",
+                        "De": "Ch 16",
+                        "Es": "Ch 16"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 16 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 16 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 16 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 16 Right/Even IN from Bus AB3"
+                  }
+                },
+                "3": {
+                  "value": "733",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 18 (R)",
+                        "Fr": "Ch 18",
+                        "De": "Ch 18",
+                        "Es": "Ch 18"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 18 (R)",
+                        "Fr": "Ch 18",
+                        "De": "Ch 18",
+                        "Es": "Ch 18"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 18 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 18 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 18 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 18 Right/Even IN from Bus AB3"
+                  }
+                },
+                "4": {
+                  "value": "734",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 20 (R)",
+                        "Fr": "Ch 20",
+                        "De": "Ch 20",
+                        "Es": "Ch 20"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 20 (R)",
+                        "Fr": "Ch 20",
+                        "De": "Ch 20",
+                        "Es": "Ch 20"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 20 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 20 D/Pair ENT de Bus AB3",
+                    "De": "Snake Ch 20 R/Gerade EIN von Bus AB3",
+                    "Es": "Snake Ch 20 Der/Par ENT de Bus AB3"
+                  }
+                },
+                "5": {
+                  "value": "735",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 22 (R)",
+                        "Fr": "Ch 22",
+                        "De": "Ch 22",
+                        "Es": "Ch 22"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 22 (R)",
+                        "Fr": "Ch 22",
+                        "De": "Ch 22",
+                        "Es": "Ch 22"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 22 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 22 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 22 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 22 Right/Even IN from Bus AB3"
+                  }
+                },
+                "6": {
+                  "value": "736",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 24 (R)",
+                        "Fr": "Ch 24",
+                        "De": "Ch 24",
+                        "Es": "Ch 24"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 24 (R)",
+                        "Fr": "Ch 24",
+                        "De": "Ch 24",
+                        "Es": "Ch 24"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 24 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 24 D/Pair ENT de Bus AB3",
+                    "De": "Snake Ch 24 R/Gerade EIN von Bus AB3",
+                    "Es": "Snake Ch 24 Der/Par ENT de Bus AB3"
+                  }
+                }
+              },
+              "selection_mode": "radio",
+              "domain": {
+                "Allow_Null": true,
+                "Allow_Multi_Alt_Select": true
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "set",
+                "sub_path": "Routing",
+                "command": "Close_Channels",
+                "input_name": "channel_list",
+                "converter": ""
+              },
+              "komand_seed": false
+            }
+          }
+        }
+      }
+    },
+    "EDAC_25_36": {
+      "type": "OcaBin",
+      "card": {
+        "id": "edac-3",
+        "name": "EDAC 3",
+        "icon": "🎚️",
+        "slot": 8,
+        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
+      },
+      "id": "50.100.1.1.1.25",
+      "geometry": {
+        "anchor": "NSEW"
+      },
+      "behavior": {
+        "overflow_ns": "auto",
+        "overflow_ew": "auto",
+        "fluid_ew": true
+      },
+      "blocks": {
+        "Card_8_Snake_Interface": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 3 - Snake Channel Routing",
+            "Fr": "EDAC 3 - Snake Canal Routing",
+            "De": "EDAC 3 - Snake Kanal Routing",
+            "Es": "EDAC 3 - Snake Canal Routing",
+            "show_label": false
+          },
+          "layout": {
+            "sticky": ""
+          },
+          "fields": {
+            "Bus_AB0_Left_Out": {
+              "type": "_GuiButtonToggler",
+              "AES70": "OcaSwitch",
+              "handler": "set_snake_out_left_c5",
+              "layout": {
+                "height": 30,
+                "alpha": 0.9,
+                "max_cols": 6,
+                "width": "100%",
+                "font": 14,
+                "padx": 0,
+                "pady": 0
               },
               "style": {
                 "active": {
@@ -3457,30 +2475,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Comp DAC L",
-                        "Fr": "Comp DAC L",
-                        "De": "Comp DAC L",
-                        "Es": "Comp DAC L"
+                        "En": "Ch 1 (L)",
+                        "Fr": "Ch 1",
+                        "De": "Ch 1",
+                        "Es": "Ch 1"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Comp DAC L",
-                        "Fr": "Comp DAC L",
-                        "De": "Comp DAC L",
-                        "Es": "Comp DAC L"
+                        "En": "Ch 1 (L)",
+                        "Fr": "Ch 1",
+                        "De": "Ch 1",
+                        "Es": "Ch 1"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Computer DAC Left OUT to Bus AB-00",
-                    "Fr": "Computer DAC Left OUT to Bus AB-00",
-                    "De": "Computer DAC Left OUT to Bus AB-00",
-                    "Es": "Computer DAC Left OUT to Bus AB-00"
+                    "En": "Snake Ch 1 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 1 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 1 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 1 Left/Odd OUT to Bus AB0"
                   }
                 },
                 "2": {
@@ -3488,30 +2506,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Sig Gen L",
-                        "Fr": "Géné Sig G",
-                        "De": "Sig-Gen L",
-                        "Es": "Gen Señal Izq"
+                        "En": "Ch 3 (L)",
+                        "Fr": "Ch 3",
+                        "De": "Ch 3",
+                        "Es": "Ch 3"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Sig Gen L",
-                        "Fr": "Géné Sig G",
-                        "De": "Sig-Gen L",
-                        "Es": "Gen Señal Izq"
+                        "En": "Ch 3 (L)",
+                        "Fr": "Ch 3",
+                        "De": "Ch 3",
+                        "Es": "Ch 3"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Signal Generator Left OUT to Bus AB-00",
-                    "Fr": "Générateur de signal SORT G vers Bus AB-00",
-                    "De": "Signalgenerator AUS L an Bus AB-00",
-                    "Es": "Generador de señal SAL Izq a Bus AB-00"
+                    "En": "Snake Ch 3 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 3 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 3 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 3 Left/Odd OUT to Bus AB0"
                   }
                 },
                 "3": {
@@ -3519,30 +2537,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Distortion L",
-                        "Fr": "Distortion L",
-                        "De": "Distortion L",
-                        "Es": "Distortion L"
+                        "En": "Ch 5 (L)",
+                        "Fr": "Ch 5",
+                        "De": "Ch 5",
+                        "Es": "Ch 5"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Distortion L",
-                        "Fr": "Distortion L",
-                        "De": "Distortion L",
-                        "Es": "Distortion L"
+                        "En": "Ch 5 (L)",
+                        "Fr": "Ch 5",
+                        "De": "Ch 5",
+                        "Es": "Ch 5"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Distortion Analyzer Left OUT to Bus AB-00",
-                    "Fr": "Distortion Analyzer Left OUT to Bus AB-00",
-                    "De": "Distortion Analyzer Left OUT to Bus AB-00",
-                    "Es": "Distortion Analyzer Left OUT to Bus AB-00"
+                    "En": "Snake Ch 5 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 5 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 5 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 5 Left/Odd OUT to Bus AB0"
                   }
                 },
                 "4": {
@@ -3550,30 +2568,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Aux IN L",
-                        "Fr": "Aux IN L",
-                        "De": "Aux IN L",
-                        "Es": "Aux IN L"
+                        "En": "Ch 7 (L)",
+                        "Fr": "Ch 7",
+                        "De": "Ch 7",
+                        "Es": "Ch 7"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Aux IN L",
-                        "Fr": "Aux IN L",
-                        "De": "Aux IN L",
-                        "Es": "Aux IN L"
+                        "En": "Ch 7 (L)",
+                        "Fr": "Ch 7",
+                        "De": "Ch 7",
+                        "Es": "Ch 7"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Aux Input Left OUT to Bus AB-00",
-                    "Fr": "Aux Entrée Left OUT to Bus AB-00",
-                    "De": "Aux Eingang Left OUT to Bus AB-00",
-                    "Es": "Aux Entrada Left OUT to Bus AB-00"
+                    "En": "Snake Ch 7 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 7 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 7 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 7 Left/Odd OUT to Bus AB0"
                   }
                 },
                 "5": {
@@ -3581,30 +2599,61 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "DUT OUT L",
-                        "Fr": "DUT OUT L",
-                        "De": "DUT OUT L",
-                        "Es": "DUT OUT L"
+                        "En": "Ch 9 (L)",
+                        "Fr": "Ch 9",
+                        "De": "Ch 9",
+                        "Es": "Ch 9"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "DUT OUT L",
-                        "Fr": "DUT OUT L",
-                        "De": "DUT OUT L",
-                        "Es": "DUT OUT L"
+                        "En": "Ch 9 (L)",
+                        "Fr": "Ch 9",
+                        "De": "Ch 9",
+                        "Es": "Ch 9"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Device Under Test Left OUT to Bus AB-00",
-                    "Fr": "Device Under Test Left OUT to Bus AB-00",
-                    "De": "Device Under Test Left OUT to Bus AB-00",
-                    "Es": "Device Under Test Left OUT to Bus AB-00"
+                    "En": "Snake Ch 9 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 9 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 9 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 9 Left/Odd OUT to Bus AB0"
+                  }
+                },
+                "6": {
+                  "value": "806",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 11 (L)",
+                        "Fr": "Ch 11",
+                        "De": "Ch 11",
+                        "Es": "Ch 11"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 11 (L)",
+                        "Fr": "Ch 11",
+                        "De": "Ch 11",
+                        "Es": "Ch 11"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 11 Left/Odd OUT to Bus AB0",
+                    "Fr": "Snake Ch 11 Left/Odd OUT to Bus AB0",
+                    "De": "Snake Ch 11 Left/Odd OUT to Bus AB0",
+                    "Es": "Snake Ch 11 Left/Odd OUT to Bus AB0"
                   }
                 }
               },
@@ -3623,18 +2672,18 @@
               },
               "komand_seed": false
             },
-            "Bus_AB02_Periph_Right_Out": {
+            "Bus_AB2_Right_Out": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_periph_out_right_c8",
+              "handler": "set_snake_out_right_c5",
               "layout": {
                 "height": 30,
-                "max_cols": 5,
+                "alpha": 0.9,
+                "max_cols": 6,
                 "width": "100%",
                 "font": 14,
                 "padx": 0,
-                "pady": 0,
-                "alpha": 0.9
+                "pady": 0
               },
               "style": {
                 "active": {
@@ -3662,30 +2711,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Comp DAC R",
-                        "Fr": "Comp DAC R",
-                        "De": "Comp DAC R",
-                        "Es": "Comp DAC R"
+                        "En": "Ch 2 (R)",
+                        "Fr": "Ch 2",
+                        "De": "Ch 2",
+                        "Es": "Ch 2"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Comp DAC R",
-                        "Fr": "Comp DAC R",
-                        "De": "Comp DAC R",
-                        "Es": "Comp DAC R"
+                        "En": "Ch 2 (R)",
+                        "Fr": "Ch 2",
+                        "De": "Ch 2",
+                        "Es": "Ch 2"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Computer DAC Right OUT to Bus AB-02",
-                    "Fr": "DAC ordinateur D SORT vers Bus AB-02",
-                    "De": "Computer-DAC R AUS an Bus AB-02",
-                    "Es": "DAC de computadora Der SAL a Bus AB-02"
+                    "En": "Snake Ch 2 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 2 D/Pair SORT vers Bus AB2",
+                    "De": "Snake Ch 2 R/Gerade AUS an Bus AB2",
+                    "Es": "Snake Ch 2 Der/Par SAL a Bus AB2"
                   }
                 },
                 "2": {
@@ -3693,30 +2742,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Sig Gen R",
-                        "Fr": "Sig Gen R",
-                        "De": "Sig Gen R",
-                        "Es": "Sig Gen R"
+                        "En": "Ch 4 (R)",
+                        "Fr": "Ch 4",
+                        "De": "Ch 4",
+                        "Es": "Ch 4"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Sig Gen R",
-                        "Fr": "Sig Gen R",
-                        "De": "Sig Gen R",
-                        "Es": "Sig Gen R"
+                        "En": "Ch 4 (R)",
+                        "Fr": "Ch 4",
+                        "De": "Ch 4",
+                        "Es": "Ch 4"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Signal Generator Right OUT to Bus AB-02",
-                    "Fr": "Signal Générateur Right OUT to Bus AB-02",
-                    "De": "Signal Generator Right OUT to Bus AB-02",
-                    "Es": "Signal Generador Right OUT to Bus AB-02"
+                    "En": "Snake Ch 4 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 4 D/Pair SORT vers Bus AB2",
+                    "De": "Snake Ch 4 R/Gerade AUS an Bus AB2",
+                    "Es": "Snake Ch 4 Der/Par SAL a Bus AB2"
                   }
                 },
                 "3": {
@@ -3724,30 +2773,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Distortion R",
-                        "Fr": "Distortion R",
-                        "De": "Distortion R",
-                        "Es": "Distortion R"
+                        "En": "Ch 6 (R)",
+                        "Fr": "Ch 6",
+                        "De": "Ch 6",
+                        "Es": "Ch 6"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Distortion R",
-                        "Fr": "Distortion R",
-                        "De": "Distortion R",
-                        "Es": "Distortion R"
+                        "En": "Ch 6 (R)",
+                        "Fr": "Ch 6",
+                        "De": "Ch 6",
+                        "Es": "Ch 6"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Distortion Analyzer Right OUT to Bus AB-02",
-                    "Fr": "Distortion Analyzer Right OUT to Bus AB-02",
-                    "De": "Distortion Analyzer Right OUT to Bus AB-02",
-                    "Es": "Distortion Analyzer Right OUT to Bus AB-02"
+                    "En": "Snake Ch 6 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 6 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 6 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 6 Right/Even OUT to Bus AB2"
                   }
                 },
                 "4": {
@@ -3755,30 +2804,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Aux IN R",
-                        "Fr": "Aux IN R",
-                        "De": "Aux IN R",
-                        "Es": "Aux IN R"
+                        "En": "Ch 8 (R)",
+                        "Fr": "Ch 8",
+                        "De": "Ch 8",
+                        "Es": "Ch 8"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Aux IN R",
-                        "Fr": "Aux IN R",
-                        "De": "Aux IN R",
-                        "Es": "Aux IN R"
+                        "En": "Ch 8 (R)",
+                        "Fr": "Ch 8",
+                        "De": "Ch 8",
+                        "Es": "Ch 8"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Aux Input Right OUT to Bus AB-02",
-                    "Fr": "Aux Entrée Right OUT to Bus AB-02",
-                    "De": "Aux Eingang Right OUT to Bus AB-02",
-                    "Es": "Aux Entrada Right OUT to Bus AB-02"
+                    "En": "Snake Ch 8 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 8 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 8 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 8 Right/Even OUT to Bus AB2"
                   }
                 },
                 "5": {
@@ -3786,30 +2835,61 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "DUT OUT R",
-                        "Fr": "DUT OUT R",
-                        "De": "DUT OUT R",
-                        "Es": "DUT OUT R"
+                        "En": "Ch 10 (R)",
+                        "Fr": "Ch 10",
+                        "De": "Ch 10",
+                        "Es": "Ch 10"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "DUT OUT R",
-                        "Fr": "DUT OUT R",
-                        "De": "DUT OUT R",
-                        "Es": "DUT OUT R"
+                        "En": "Ch 10 (R)",
+                        "Fr": "Ch 10",
+                        "De": "Ch 10",
+                        "Es": "Ch 10"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Device Under Test Right OUT to Bus AB-02",
-                    "Fr": "Device Under Test Right OUT to Bus AB-02",
-                    "De": "Device Under Test Right OUT to Bus AB-02",
-                    "Es": "Device Under Test Right OUT to Bus AB-02"
+                    "En": "Snake Ch 10 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 10 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 10 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 10 Right/Even OUT to Bus AB2"
+                  }
+                },
+                "6": {
+                  "value": "826",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 12 (R)",
+                        "Fr": "Ch 12",
+                        "De": "Ch 12",
+                        "Es": "Ch 12"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 12 (R)",
+                        "Fr": "Ch 12",
+                        "De": "Ch 12",
+                        "Es": "Ch 12"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 12 Right/Even OUT to Bus AB2",
+                    "Fr": "Snake Ch 12 Right/Even OUT to Bus AB2",
+                    "De": "Snake Ch 12 Right/Even OUT to Bus AB2",
+                    "Es": "Snake Ch 12 Right/Even OUT to Bus AB2"
                   }
                 }
               },
@@ -3828,18 +2908,18 @@
               },
               "komand_seed": false
             },
-            "Bus_AB01_Periph_Left_In": {
+            "Bus_AB1_Left_In": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_periph_in_left_c8",
+              "handler": "set_snake_in_left_c5",
               "layout": {
                 "height": 30,
-                "max_cols": 5,
+                "alpha": 0.9,
+                "max_cols": 6,
                 "width": "100%",
                 "font": 14,
                 "padx": 0,
-                "pady": 0,
-                "alpha": 0.9
+                "pady": 0
               },
               "style": {
                 "active": {
@@ -3867,30 +2947,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "DUT In L",
-                        "Fr": "DUT In L",
-                        "De": "DUT In L",
-                        "Es": "DUT In L"
+                        "En": "Ch 13 (L)",
+                        "Fr": "Ch 13",
+                        "De": "Ch 13",
+                        "Es": "Ch 13"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "DUT In L",
-                        "Fr": "DUT In L",
-                        "De": "DUT In L",
-                        "Es": "DUT In L"
+                        "En": "Ch 13 (L)",
+                        "Fr": "Ch 13",
+                        "De": "Ch 13",
+                        "Es": "Ch 13"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Device Under Test Left IN from Bus AB-01",
-                    "Fr": "Appareil en test G ENT de Bus AB-01",
-                    "De": "Prüfling L EIN von Bus AB-01",
-                    "Es": "Dispositivo bajo prueba Izq ENT de Bus AB-01"
+                    "En": "Snake Ch 13 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 13 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 13 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 13 Left/Odd IN from Bus AB1"
                   }
                 },
                 "2": {
@@ -3898,30 +2978,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "DAC IN L",
-                        "Fr": "DAC IN L",
-                        "De": "DAC IN L",
-                        "Es": "DAC IN L"
+                        "En": "Ch 15 (L)",
+                        "Fr": "Ch 15",
+                        "De": "Ch 15",
+                        "Es": "Ch 15"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "DAC IN L",
-                        "Fr": "DAC IN L",
-                        "De": "DAC IN L",
-                        "Es": "DAC IN L"
+                        "En": "Ch 15 (L)",
+                        "Fr": "Ch 15",
+                        "De": "Ch 15",
+                        "Es": "Ch 15"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "DAC Left IN from Bus AB-01",
-                    "Fr": "DAC Left IN from Bus AB-01",
-                    "De": "DAC Left IN from Bus AB-01",
-                    "Es": "DAC Left IN from Bus AB-01"
+                    "En": "Snake Ch 15 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 15 G/Impair ENT de Bus AB1",
+                    "De": "Snake Ch 15 L/Ungerade EIN von Bus AB1",
+                    "Es": "Snake Ch 15 Izq/Impar ENT de Bus AB1"
                   }
                 },
                 "3": {
@@ -3929,30 +3009,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Monitor 1 L",
-                        "Fr": "Monitor 1 L",
-                        "De": "Monitor 1 L",
-                        "Es": "Monitor 1 L"
+                        "En": "Ch 17 (L)",
+                        "Fr": "Ch 17",
+                        "De": "Ch 17",
+                        "Es": "Ch 17"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Monitor 1 L",
-                        "Fr": "Monitor 1 L",
-                        "De": "Monitor 1 L",
-                        "Es": "Monitor 1 L"
+                        "En": "Ch 17 (L)",
+                        "Fr": "Ch 17",
+                        "De": "Ch 17",
+                        "Es": "Ch 17"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Monitor 1 Left IN from Bus AB-01",
-                    "Fr": "Moniteur 1 G ENT de Bus AB-01",
-                    "De": "Monitor 1 L EIN von Bus AB-01",
-                    "Es": "Monitor 1 Izq ENT de Bus AB-01"
+                    "En": "Snake Ch 17 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 17 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 17 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 17 Left/Odd IN from Bus AB1"
                   }
                 },
                 "4": {
@@ -3960,30 +3040,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Monitor 2 L",
-                        "Fr": "Monitor 2 L",
-                        "De": "Monitor 2 L",
-                        "Es": "Monitor 2 L"
+                        "En": "Ch 19 (L)",
+                        "Fr": "Ch 19",
+                        "De": "Ch 19",
+                        "Es": "Ch 19"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Monitor 2 L",
-                        "Fr": "Monitor 2 L",
-                        "De": "Monitor 2 L",
-                        "Es": "Monitor 2 L"
+                        "En": "Ch 19 (L)",
+                        "Fr": "Ch 19",
+                        "De": "Ch 19",
+                        "Es": "Ch 19"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Monitor 2 Left IN from Bus AB-01",
-                    "Fr": "Monitor 2 Left IN from Bus AB-01",
-                    "De": "Monitor 2 Left IN from Bus AB-01",
-                    "Es": "Monitor 2 Left IN from Bus AB-01"
+                    "En": "Snake Ch 19 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 19 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 19 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 19 Left/Odd IN from Bus AB1"
                   }
                 },
                 "5": {
@@ -3991,30 +3071,61 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Monitor 3 L",
-                        "Fr": "Monitor 3 L",
-                        "De": "Monitor 3 L",
-                        "Es": "Monitor 3 L"
+                        "En": "Ch 21 (L)",
+                        "Fr": "Ch 21",
+                        "De": "Ch 21",
+                        "Es": "Ch 21"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Monitor 3 L",
-                        "Fr": "Monitor 3 L",
-                        "De": "Monitor 3 L",
-                        "Es": "Monitor 3 L"
+                        "En": "Ch 21 (L)",
+                        "Fr": "Ch 21",
+                        "De": "Ch 21",
+                        "Es": "Ch 21"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Monitor 3 Left IN from Bus AB-01",
-                    "Fr": "Moniteur 3 G ENT de Bus AB-01",
-                    "De": "Monitor 3 L EIN von Bus AB-01",
-                    "Es": "Monitor 3 Izq ENT de Bus AB-01"
+                    "En": "Snake Ch 21 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 21 G/Impair ENT de Bus AB1",
+                    "De": "Snake Ch 21 L/Ungerade EIN von Bus AB1",
+                    "Es": "Snake Ch 21 Izq/Impar ENT de Bus AB1"
+                  }
+                },
+                "6": {
+                  "value": "816",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 23 (L)",
+                        "Fr": "Ch 23",
+                        "De": "Ch 23",
+                        "Es": "Ch 23"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 23 (L)",
+                        "Fr": "Ch 23",
+                        "De": "Ch 23",
+                        "Es": "Ch 23"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 23 Left/Odd IN from Bus AB1",
+                    "Fr": "Snake Ch 23 Left/Odd IN from Bus AB1",
+                    "De": "Snake Ch 23 Left/Odd IN from Bus AB1",
+                    "Es": "Snake Ch 23 Left/Odd IN from Bus AB1"
                   }
                 }
               },
@@ -4033,18 +3144,18 @@
               },
               "komand_seed": false
             },
-            "Bus_AB03_Periph_Right_In": {
+            "Bus_AB3_Right_In": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_periph_in_right_c8",
+              "handler": "set_snake_in_right_c5",
               "layout": {
                 "height": 30,
-                "max_cols": 5,
+                "alpha": 0.9,
+                "max_cols": 6,
                 "width": "100%",
                 "font": 14,
                 "padx": 0,
-                "pady": 0,
-                "alpha": 0.9
+                "pady": 0
               },
               "style": {
                 "active": {
@@ -4072,30 +3183,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "DUT In R",
-                        "Fr": "DUT In R",
-                        "De": "DUT In R",
-                        "Es": "DUT In R"
+                        "En": "Ch 14 (R)",
+                        "Fr": "Ch 14",
+                        "De": "Ch 14",
+                        "Es": "Ch 14"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "DUT In R",
-                        "Fr": "DUT In R",
-                        "De": "DUT In R",
-                        "Es": "DUT In R"
+                        "En": "Ch 14 (R)",
+                        "Fr": "Ch 14",
+                        "De": "Ch 14",
+                        "Es": "Ch 14"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Device Under Test Right IN from Bus AB-03",
-                    "Fr": "Device Under Test Right IN from Bus AB-03",
-                    "De": "Device Under Test Right IN from Bus AB-03",
-                    "Es": "Device Under Test Right IN from Bus AB-03"
+                    "En": "Snake Ch 14 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 14 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 14 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 14 Right/Even IN from Bus AB3"
                   }
                 },
                 "2": {
@@ -4103,30 +3214,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "DAC IN R",
-                        "Fr": "ENT DAC D",
-                        "De": "DAC EIN R",
-                        "Es": "ENT DAC Der"
+                        "En": "Ch 16 (R)",
+                        "Fr": "Ch 16",
+                        "De": "Ch 16",
+                        "Es": "Ch 16"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "DAC IN R",
-                        "Fr": "ENT DAC D",
-                        "De": "DAC EIN R",
-                        "Es": "ENT DAC Der"
+                        "En": "Ch 16 (R)",
+                        "Fr": "Ch 16",
+                        "De": "Ch 16",
+                        "Es": "Ch 16"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "DAC Right IN from Bus AB-03",
-                    "Fr": "DAC Right IN from Bus AB-03",
-                    "De": "DAC Right IN from Bus AB-03",
-                    "Es": "DAC Right IN from Bus AB-03"
+                    "En": "Snake Ch 16 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 16 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 16 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 16 Right/Even IN from Bus AB3"
                   }
                 },
                 "3": {
@@ -4134,30 +3245,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Monitor 1 R",
-                        "Fr": "Monitor 1 R",
-                        "De": "Monitor 1 R",
-                        "Es": "Monitor 1 R"
+                        "En": "Ch 18 (R)",
+                        "Fr": "Ch 18",
+                        "De": "Ch 18",
+                        "Es": "Ch 18"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Monitor 1 R",
-                        "Fr": "Monitor 1 R",
-                        "De": "Monitor 1 R",
-                        "Es": "Monitor 1 R"
+                        "En": "Ch 18 (R)",
+                        "Fr": "Ch 18",
+                        "De": "Ch 18",
+                        "Es": "Ch 18"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Monitor 1 Right IN from Bus AB-03",
-                    "Fr": "Monitor 1 Right IN from Bus AB-03",
-                    "De": "Monitor 1 Right IN from Bus AB-03",
-                    "Es": "Monitor 1 Right IN from Bus AB-03"
+                    "En": "Snake Ch 18 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 18 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 18 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 18 Right/Even IN from Bus AB3"
                   }
                 },
                 "4": {
@@ -4165,30 +3276,30 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Monitor 2 R",
-                        "Fr": "Monitor 2 R",
-                        "De": "Monitor 2 R",
-                        "Es": "Monitor 2 R"
+                        "En": "Ch 20 (R)",
+                        "Fr": "Ch 20",
+                        "De": "Ch 20",
+                        "Es": "Ch 20"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Monitor 2 R",
-                        "Fr": "Monitor 2 R",
-                        "De": "Monitor 2 R",
-                        "Es": "Monitor 2 R"
+                        "En": "Ch 20 (R)",
+                        "Fr": "Ch 20",
+                        "De": "Ch 20",
+                        "Es": "Ch 20"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Monitor 2 Right IN from Bus AB-03",
-                    "Fr": "Moniteur 2 D ENT de Bus AB-03",
-                    "De": "Monitor 2 R EIN von Bus AB-03",
-                    "Es": "Monitor 2 Der ENT de Bus AB-03"
+                    "En": "Snake Ch 20 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 20 D/Pair ENT de Bus AB3",
+                    "De": "Snake Ch 20 R/Gerade EIN von Bus AB3",
+                    "Es": "Snake Ch 20 Der/Par ENT de Bus AB3"
                   }
                 },
                 "5": {
@@ -4196,30 +3307,61 @@
                   "label": {
                     "active": {
                       "text": {
-                        "En": "Monitor 3 R",
-                        "Fr": "Monitor 3 R",
-                        "De": "Monitor 3 R",
-                        "Es": "Monitor 3 R"
+                        "En": "Ch 22 (R)",
+                        "Fr": "Ch 22",
+                        "De": "Ch 22",
+                        "Es": "Ch 22"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     },
                     "inactive": {
                       "text": {
-                        "En": "Monitor 3 R",
-                        "Fr": "Monitor 3 R",
-                        "De": "Monitor 3 R",
-                        "Es": "Monitor 3 R"
+                        "En": "Ch 22 (R)",
+                        "Fr": "Ch 22",
+                        "De": "Ch 22",
+                        "Es": "Ch 22"
                       },
                       "text_size": 12,
                       "text_color": "#cccccc"
                     }
                   },
                   "description": {
-                    "En": "Monitor 3 Right IN from Bus AB-03",
-                    "Fr": "Moniteur 3 D ENT de Bus AB-03",
-                    "De": "Monitor 3 R EIN von Bus AB-03",
-                    "Es": "Monitor 3 Der ENT de Bus AB-03"
+                    "En": "Snake Ch 22 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 22 Right/Even IN from Bus AB3",
+                    "De": "Snake Ch 22 Right/Even IN from Bus AB3",
+                    "Es": "Snake Ch 22 Right/Even IN from Bus AB3"
+                  }
+                },
+                "6": {
+                  "value": "836",
+                  "label": {
+                    "active": {
+                      "text": {
+                        "En": "Ch 24 (R)",
+                        "Fr": "Ch 24",
+                        "De": "Ch 24",
+                        "Es": "Ch 24"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    },
+                    "inactive": {
+                      "text": {
+                        "En": "Ch 24 (R)",
+                        "Fr": "Ch 24",
+                        "De": "Ch 24",
+                        "Es": "Ch 24"
+                      },
+                      "text_size": 12,
+                      "text_color": "#cccccc"
+                    }
+                  },
+                  "description": {
+                    "En": "Snake Ch 24 Right/Even IN from Bus AB3",
+                    "Fr": "Snake Ch 24 D/Pair ENT de Bus AB3",
+                    "De": "Snake Ch 24 R/Gerade EIN von Bus AB3",
+                    "Es": "Snake Ch 24 Der/Par ENT de Bus AB3"
                   }
                 }
               },
@@ -4238,35 +3380,19 @@
               },
               "komand_seed": false
             }
-          },
-          "Orientation": "vertical",
-          "style": {
-            "active": {
-              "text_color": "#1a1a1a",
-              "bg_color": "#000000",
-              "border_color": "#FF9900",
-              "glow_intensity": 1,
-              "font_style": "bold",
-              "font_size": null
-            },
-            "inactive": {
-              "text_color": "#888888",
-              "bg_color": "#2b2b2b",
-              "font_style": "normal",
-              "font_size": null,
-              "glow_intensity": 0
-            }
           }
         }
       }
-    },
+    }
+  },
+  "Aux": {
     "Test_Gear": {
       "type": "OcaBin",
       "card": {
         "id": "aux",
         "name": "Aux",
         "icon": "🎛️",
-        "slot": 7,
+        "slot": 9,
         "about": "patch panel, AP, Neutrik, music, speakers, XLR; stereo: left and right, send and return"
       },
       "id": "50.100.1.1.0.1",
@@ -4285,13 +3411,13 @@
         "fluid_ew": true
       },
       "blocks": {
-        "Card_7_Snake_Interface": {
+        "Card_9_Snake_Interface": {
           "type": "OcaBlock",
           "description": {
-            "En": "Card 7 - Bench & Patch Routing",
-            "Fr": "Card 7 - Bench & Patch Routing",
-            "De": "Card 7 - Bench & Patch Routing",
-            "Es": "Card 7 - Bench & Patch Routing",
+            "En": "Card 9 - Bench & Patch Routing",
+            "Fr": "Card 9 - Bench & Patch Routing",
+            "De": "Card 9 - Bench & Patch Routing",
+            "Es": "Card 9 - Bench & Patch Routing",
             "show_label": false
           },
           "layout": {
@@ -4301,7 +3427,7 @@
             "Bus_AB0_Left_Out": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_out_left_c7",
+              "handler": "set_snake_out_left_c9",
               "layout": {
                 "height": 30,
                 "max_cols": 8,
@@ -4333,7 +3459,7 @@
               },
               "options": {
                 "1": {
-                  "value": "701",
+                  "value": "901",
                   "label": {
                     "active": {
                       "text": {
@@ -4364,7 +3490,7 @@
                   }
                 },
                 "2": {
-                  "value": "702",
+                  "value": "902",
                   "label": {
                     "active": {
                       "text": {
@@ -4395,7 +3521,7 @@
                   }
                 },
                 "3": {
-                  "value": "703",
+                  "value": "903",
                   "label": {
                     "active": {
                       "text": {
@@ -4426,7 +3552,7 @@
                   }
                 },
                 "4": {
-                  "value": "704",
+                  "value": "904",
                   "label": {
                     "active": {
                       "text": {
@@ -4457,7 +3583,7 @@
                   }
                 },
                 "5": {
-                  "value": "705",
+                  "value": "905",
                   "label": {
                     "active": {
                       "text": {
@@ -4488,7 +3614,7 @@
                   }
                 },
                 "6": {
-                  "value": "706",
+                  "value": "906",
                   "label": {
                     "active": {
                       "text": {
@@ -4519,7 +3645,7 @@
                   }
                 },
                 "7": {
-                  "value": "707",
+                  "value": "907",
                   "label": {
                     "active": {
                       "text": {
@@ -4550,7 +3676,7 @@
                   }
                 },
                 "8": {
-                  "value": "708",
+                  "value": "908",
                   "label": {
                     "active": {
                       "text": {
@@ -4602,7 +3728,7 @@
             "Bus_AB2_Right_Out": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_out_right_c7",
+              "handler": "set_snake_out_right_c9",
               "layout": {
                 "height": 30,
                 "max_cols": 8,
@@ -4634,7 +3760,7 @@
               },
               "options": {
                 "1": {
-                  "value": "721",
+                  "value": "921",
                   "label": {
                     "active": {
                       "text": {
@@ -4665,7 +3791,7 @@
                   }
                 },
                 "2": {
-                  "value": "722",
+                  "value": "922",
                   "label": {
                     "active": {
                       "text": {
@@ -4696,7 +3822,7 @@
                   }
                 },
                 "3": {
-                  "value": "723",
+                  "value": "923",
                   "label": {
                     "active": {
                       "text": {
@@ -4727,7 +3853,7 @@
                   }
                 },
                 "4": {
-                  "value": "724",
+                  "value": "924",
                   "label": {
                     "active": {
                       "text": {
@@ -4758,7 +3884,7 @@
                   }
                 },
                 "5": {
-                  "value": "725",
+                  "value": "925",
                   "label": {
                     "active": {
                       "text": {
@@ -4789,7 +3915,7 @@
                   }
                 },
                 "6": {
-                  "value": "726",
+                  "value": "926",
                   "label": {
                     "active": {
                       "text": {
@@ -4820,7 +3946,7 @@
                   }
                 },
                 "7": {
-                  "value": "727",
+                  "value": "927",
                   "label": {
                     "active": {
                       "text": {
@@ -4851,7 +3977,7 @@
                   }
                 },
                 "8": {
-                  "value": "728",
+                  "value": "928",
                   "label": {
                     "active": {
                       "text": {
@@ -4903,7 +4029,7 @@
             "Bus_AB1_Left_In": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_in_left_c7",
+              "handler": "set_snake_in_left_c9",
               "layout": {
                 "height": 30,
                 "max_cols": 8,
@@ -4935,7 +4061,7 @@
               },
               "options": {
                 "1": {
-                  "value": "711",
+                  "value": "911",
                   "label": {
                     "active": {
                       "text": {
@@ -4966,7 +4092,7 @@
                   }
                 },
                 "2": {
-                  "value": "712",
+                  "value": "912",
                   "label": {
                     "active": {
                       "text": {
@@ -4997,7 +4123,7 @@
                   }
                 },
                 "3": {
-                  "value": "713",
+                  "value": "913",
                   "label": {
                     "active": {
                       "text": {
@@ -5028,7 +4154,7 @@
                   }
                 },
                 "4": {
-                  "value": "714",
+                  "value": "914",
                   "label": {
                     "active": {
                       "text": {
@@ -5059,7 +4185,7 @@
                   }
                 },
                 "5": {
-                  "value": "715",
+                  "value": "915",
                   "label": {
                     "active": {
                       "text": {
@@ -5090,7 +4216,7 @@
                   }
                 },
                 "6": {
-                  "value": "716",
+                  "value": "916",
                   "label": {
                     "active": {
                       "text": {
@@ -5121,7 +4247,7 @@
                   }
                 },
                 "7": {
-                  "value": "717",
+                  "value": "917",
                   "label": {
                     "active": {
                       "text": {
@@ -5152,7 +4278,7 @@
                   }
                 },
                 "8": {
-                  "value": "718",
+                  "value": "918",
                   "label": {
                     "active": {
                       "text": {
@@ -5204,7 +4330,7 @@
             "Bus_AB3_Right_In": {
               "type": "_GuiButtonToggler",
               "AES70": "OcaSwitch",
-              "handler": "set_snake_in_right_c7",
+              "handler": "set_snake_in_right_c9",
               "layout": {
                 "height": 30,
                 "max_cols": 8,
@@ -5236,7 +4362,7 @@
               },
               "options": {
                 "1": {
-                  "value": "731",
+                  "value": "931",
                   "label": {
                     "active": {
                       "text": {
@@ -5267,7 +4393,7 @@
                   }
                 },
                 "2": {
-                  "value": "732",
+                  "value": "932",
                   "label": {
                     "active": {
                       "text": {
@@ -5298,7 +4424,7 @@
                   }
                 },
                 "3": {
-                  "value": "733",
+                  "value": "933",
                   "label": {
                     "active": {
                       "text": {
@@ -5329,7 +4455,7 @@
                   }
                 },
                 "4": {
-                  "value": "734",
+                  "value": "934",
                   "label": {
                     "active": {
                       "text": {
@@ -5360,7 +4486,7 @@
                   }
                 },
                 "5": {
-                  "value": "735",
+                  "value": "935",
                   "label": {
                     "active": {
                       "text": {
@@ -5391,7 +4517,7 @@
                   }
                 },
                 "6": {
-                  "value": "736",
+                  "value": "936",
                   "label": {
                     "active": {
                       "text": {
@@ -5422,7 +4548,7 @@
                   }
                 },
                 "7": {
-                  "value": "737",
+                  "value": "937",
                   "label": {
                     "active": {
                       "text": {
@@ -5453,7 +4579,7 @@
                   }
                 },
                 "8": {
-                  "value": "738",
+                  "value": "938",
                   "label": {
                     "active": {
                       "text": {
