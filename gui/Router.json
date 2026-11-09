@@ -2,6 +2,13 @@
   "Coax": {
     "left": {
       "type": "OcaBin",
+      "card": {
+        "id": "coax-left",
+        "name": "Coax Left",
+        "icon": "🔀",
+        "slot": 0,
+        "about": "8×4 coax crosspoint, left"
+      },
       "id": "50.100.1.1.0.1",
       "geometry": {
         "anchor": "NSEW"
@@ -219,6 +226,13 @@
     },
     "Right": {
       "type": "OcaBin",
+      "card": {
+        "id": "coax-right",
+        "name": "Coax Right",
+        "icon": "🔀",
+        "slot": 1,
+        "about": "8×4 coax crosspoint, right"
+      },
       "id": "50.100.1.1.0.2",
       "geometry": {
         "anchor": "NSEW"
@@ -432,6 +446,13 @@
   "EDAC_1_12": {
     "EDAC_1_12": {
       "type": "OcaBin",
+      "card": {
+        "id": "edac-1",
+        "name": "EDAC 1",
+        "icon": "🎚️",
+        "slot": 4,
+        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
+      },
       "id": "50.100.1.1.1.1",
       "geometry": {
         "anchor": "NSEW"
@@ -1405,6 +1426,13 @@
     },
     "EDAC_13_24": {
       "type": "OcaBin",
+      "card": {
+        "id": "edac-2",
+        "name": "EDAC 2",
+        "icon": "🎚️",
+        "slot": 5,
+        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
+      },
       "id": "50.100.1.1.1.13",
       "geometry": {
         "anchor": "NSEW"
@@ -2378,6 +2406,13 @@
     },
     "EDAC_25_36": {
       "type": "OcaBin",
+      "card": {
+        "id": "edac-3",
+        "name": "EDAC 3",
+        "icon": "🎚️",
+        "slot": 6,
+        "about": "snake on a stereo EDAC set; stereo: left and right, send and return"
+      },
       "id": "50.100.1.1.1.25",
       "geometry": {
         "anchor": "NSEW"
@@ -2391,10 +2426,10 @@
         "Card_6_Snake_Interface": {
           "type": "OcaBlock",
           "description": {
-            "En": "Card 5 - Snake Channel Routing",
-            "Fr": "Card 5 - Snake Canal Routing",
-            "De": "Card 5 - Snake Kanal Routing",
-            "Es": "Card 5 - Snake Canal Routing",
+            "En": "EDAC 3 - Snake Channel Routing",
+            "Fr": "EDAC 3 - Snake Canal Routing",
+            "De": "EDAC 3 - Snake Kanal Routing",
+            "Es": "EDAC 3 - Snake Canal Routing",
             "show_label": false
           },
           "layout": {
@@ -3353,6 +3388,13 @@
   "Peripherals": {
     "Peripherals": {
       "type": "OcaBin",
+      "card": {
+        "id": "aux",
+        "name": "Aux",
+        "icon": "🎛️",
+        "slot": 8,
+        "about": "bench gear, DUT and monitors; stereo: left and right, send and return"
+      },
       "id": "50.100.1.1.0.2",
       "geometry": {
         "anchor": "NSEW"
@@ -4220,6 +4262,13 @@
     },
     "Test_Gear": {
       "type": "OcaBin",
+      "card": {
+        "id": "aux",
+        "name": "Aux",
+        "icon": "🎛️",
+        "slot": 7,
+        "about": "patch panel, AP, Neutrik, music, speakers, XLR; stereo: left and right, send and return"
+      },
       "id": "50.100.1.1.0.1",
       "description": {
         "En": "Root container locked to window edges with smart auto-scrolling.",
