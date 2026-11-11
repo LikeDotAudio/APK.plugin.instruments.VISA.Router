@@ -923,6 +923,703 @@
       ]
     },
     {
+      "id": "card_7",
+      "card": 4,
+      "slot": 7,
+      "address_prefix": 700,
+      "module": "HP 34501/2/7 32-channel relay mux",
+      "kind": "relay_mux",
+      "label": "EDAC 2 — snake, send ch 1–12 and return ch 13–24",
+      "sheet": "500 - EDAC 2",
+      "banks": [
+        {
+          "bank": 0,
+          "common": "00",
+          "bus": "AB0",
+          "bus_relay": 90,
+          "relays": [
+            {
+              "relay": 0,
+              "code": "00",
+              "address": 700,
+              "channel": "SUN IN",
+              "audio_channel": "SUN",
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": false,
+              "role": "bank common connector"
+            },
+            {
+              "relay": 1,
+              "code": "01",
+              "address": 701,
+              "channel": "Left / Odd",
+              "audio_channel": 1,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB0",
+              "bus_declared": "AB0",
+              "bus_relay": 90,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 2,
+              "code": "02",
+              "address": 702,
+              "channel": "Left / Odd",
+              "audio_channel": 3,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB0",
+              "bus_declared": "AB0",
+              "bus_relay": 90,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 3,
+              "code": "03",
+              "address": 703,
+              "channel": "Left / Odd",
+              "audio_channel": 5,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB0",
+              "bus_declared": "AB0",
+              "bus_relay": 90,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 4,
+              "code": "04",
+              "address": 704,
+              "channel": "Left / Odd",
+              "audio_channel": 7,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB0",
+              "bus_declared": "AB0",
+              "bus_relay": 90,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 5,
+              "code": "05",
+              "address": 705,
+              "channel": "Left / Odd",
+              "audio_channel": 9,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB0",
+              "bus_declared": "AB0",
+              "bus_relay": 90,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 6,
+              "code": "06",
+              "address": 706,
+              "channel": "Left / Odd",
+              "audio_channel": 11,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB0",
+              "bus_declared": "AB0",
+              "bus_relay": 90,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 7,
+              "code": "07",
+              "address": 707,
+              "channel": "EARTH OUT",
+              "audio_channel": "EARTH",
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 8,
+              "code": "08",
+              "address": 708,
+              "channel": "SKY IN",
+              "audio_channel": "SKY",
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            }
+          ]
+        },
+        {
+          "bank": 1,
+          "common": "10",
+          "bus": "AB1",
+          "bus_relay": 91,
+          "relays": [
+            {
+              "relay": 0,
+              "code": "10",
+              "address": 710,
+              "channel": "NC",
+              "audio_channel": "NC",
+              "direction": "NC",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": false,
+              "role": "bank common connector"
+            },
+            {
+              "relay": 1,
+              "code": "11",
+              "address": 711,
+              "channel": "Left / Odd",
+              "audio_channel": 13,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB1",
+              "bus_declared": "AB1",
+              "bus_relay": 91,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 2,
+              "code": "12",
+              "address": 712,
+              "channel": "Left / Odd",
+              "audio_channel": 15,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB1",
+              "bus_declared": "AB1",
+              "bus_relay": 91,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 3,
+              "code": "13",
+              "address": 713,
+              "channel": "Left / Odd",
+              "audio_channel": 17,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB1",
+              "bus_declared": "AB1",
+              "bus_relay": 91,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 4,
+              "code": "14",
+              "address": 714,
+              "channel": "Left / Odd",
+              "audio_channel": 19,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB1",
+              "bus_declared": "AB1",
+              "bus_relay": 91,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 5,
+              "code": "15",
+              "address": 715,
+              "channel": "Left / Odd",
+              "audio_channel": 21,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB1",
+              "bus_declared": "AB1",
+              "bus_relay": 91,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 6,
+              "code": "16",
+              "address": 716,
+              "channel": "Left / Odd",
+              "audio_channel": 23,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB1",
+              "bus_declared": "AB1",
+              "bus_relay": 91,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 7,
+              "code": "17",
+              "address": 717,
+              "channel": "Grass IN",
+              "audio_channel": "GRASS",
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 8,
+              "code": "18",
+              "address": 718,
+              "channel": "SUN OUT",
+              "audio_channel": "SUN",
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            }
+          ]
+        },
+        {
+          "bank": 2,
+          "common": "20",
+          "bus": "AB2",
+          "bus_relay": 92,
+          "relays": [
+            {
+              "relay": 0,
+              "code": "20",
+              "address": 720,
+              "channel": "EARTH IN",
+              "audio_channel": "EARTH",
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": false,
+              "role": "bank common connector"
+            },
+            {
+              "relay": 1,
+              "code": "21",
+              "address": 721,
+              "channel": "Right / Even",
+              "audio_channel": 2,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB2",
+              "bus_declared": "AB2",
+              "bus_relay": 92,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 2,
+              "code": "22",
+              "address": 722,
+              "channel": "Right / Even",
+              "audio_channel": 4,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB2",
+              "bus_declared": "AB2",
+              "bus_relay": 92,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 3,
+              "code": "23",
+              "address": 723,
+              "channel": "Right / Even",
+              "audio_channel": 6,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB2",
+              "bus_declared": "AB2",
+              "bus_relay": 92,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 4,
+              "code": "24",
+              "address": 724,
+              "channel": "Right / Even",
+              "audio_channel": 8,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB2",
+              "bus_declared": "AB2",
+              "bus_relay": 92,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 5,
+              "code": "25",
+              "address": 725,
+              "channel": "Right / Even",
+              "audio_channel": 10,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB2",
+              "bus_declared": "AB2",
+              "bus_relay": 92,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 6,
+              "code": "26",
+              "address": 726,
+              "channel": "Right / Even",
+              "audio_channel": 12,
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": "AB2",
+              "bus_declared": "AB2",
+              "bus_relay": 92,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 7,
+              "code": "27",
+              "address": 727,
+              "channel": "SKY OUT",
+              "audio_channel": "SKY",
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 8,
+              "code": "28",
+              "address": 728,
+              "channel": "NC",
+              "audio_channel": "NC",
+              "direction": "NC",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": false,
+              "role": "unassigned"
+            }
+          ]
+        },
+        {
+          "bank": 3,
+          "common": "30",
+          "bus": "AB3",
+          "bus_relay": 93,
+          "relays": [
+            {
+              "relay": 0,
+              "code": "30",
+              "address": 730,
+              "channel": "Grass OUT",
+              "audio_channel": "GRASS",
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": false,
+              "role": "bank common connector"
+            },
+            {
+              "relay": 1,
+              "code": "31",
+              "address": 731,
+              "channel": "Right / Even",
+              "audio_channel": 14,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB3",
+              "bus_declared": "AB3",
+              "bus_relay": 93,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 2,
+              "code": "32",
+              "address": 732,
+              "channel": "Right / Even",
+              "audio_channel": 16,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB3",
+              "bus_declared": "AB3",
+              "bus_relay": 93,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 3,
+              "code": "33",
+              "address": 733,
+              "channel": "Right / Even",
+              "audio_channel": 18,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB3",
+              "bus_declared": "AB3",
+              "bus_relay": 93,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 4,
+              "code": "34",
+              "address": 734,
+              "channel": "Right / Even",
+              "audio_channel": 20,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB3",
+              "bus_declared": "AB3",
+              "bus_relay": 93,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 5,
+              "code": "35",
+              "address": 735,
+              "channel": "Right / Even",
+              "audio_channel": 22,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB3",
+              "bus_declared": "AB3",
+              "bus_relay": 93,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 6,
+              "code": "36",
+              "address": 736,
+              "channel": "Right / Even",
+              "audio_channel": 24,
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": "AB3",
+              "bus_declared": "AB3",
+              "bus_relay": 93,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 7,
+              "code": "37",
+              "address": 737,
+              "channel": "SUN IN",
+              "audio_channel": "SUN",
+              "direction": "IN",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            },
+            {
+              "relay": 8,
+              "code": "38",
+              "address": 738,
+              "channel": "EARTH OUT",
+              "audio_channel": "EARTH",
+              "direction": "OUT",
+              "direction_basis": "stated",
+              "bus": null,
+              "bus_declared": "NC",
+              "bus_relay": null,
+              "bus_unknown": false,
+              "terminals": [
+                "HI",
+                "LO"
+              ],
+              "physical": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "card_8",
       "card": 5,
       "slot": 8,
