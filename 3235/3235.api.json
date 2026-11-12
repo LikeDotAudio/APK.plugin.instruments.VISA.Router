@@ -72,12 +72,12 @@
     "do": "Zero-argument execution actions and trigger commands"
   },
   "summary": {
-    "total_commands": 10,
+    "total_commands": 38,
     "get_count": 2,
     "set_count": 2,
     "nab_count": 2,
     "rig_count": 0,
-    "do_count": 6
+    "do_count": 34
   },
   "endpoints": {
     "get": {
@@ -241,6 +241,27 @@
     },
     "rig": {},
     "do": {
+      "Close_Card_0": {
+        "command": "Close_Card_0",
+        "verb": "do",
+        "description": "Coax Left: close every relay on slot 0",
+        "scpi": "CLOSE 000-099",
+        "subsystem": "General",
+        "group": "Close Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_Card_0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_Card_0"
+          }
+        },
+        "unverified": false
+      },
       "Close_All": {
         "command": "Close_All",
         "verb": "do",
@@ -258,6 +279,447 @@
           "direction": "in",
           "payload_format": {
             "command": "Close_All"
+          }
+        },
+        "unverified": false
+      },
+      "Close_Card_1": {
+        "command": "Close_Card_1",
+        "verb": "do",
+        "description": "Coax Right: close every relay on slot 1",
+        "scpi": "CLOSE 100-199",
+        "subsystem": "General",
+        "group": "Close Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_Card_1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_Card_1"
+          }
+        },
+        "unverified": false
+      },
+      "Close_Card_6": {
+        "command": "Close_Card_6",
+        "verb": "do",
+        "description": "EDAC 1: close every relay on slot 6",
+        "scpi": "CLOSE 600-699",
+        "subsystem": "General",
+        "group": "Close Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_Card_6",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_Card_6"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_6_AB0": {
+        "command": "Connect_Card_6_AB0",
+        "verb": "do",
+        "description": "EDAC 1: connect bank 0 outputs to AB0 (LEFT SEND)",
+        "scpi": "CLOSE 690",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_6_AB0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_6_AB0"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_6_AB1": {
+        "command": "Connect_Card_6_AB1",
+        "verb": "do",
+        "description": "EDAC 1: connect bank 1 inputs to AB1 (LEFT RETURN)",
+        "scpi": "CLOSE 691",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_6_AB1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_6_AB1"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_6_AB2": {
+        "command": "Connect_Card_6_AB2",
+        "verb": "do",
+        "description": "EDAC 1: connect bank 2 outputs to AB2 (RIGHT SEND)",
+        "scpi": "CLOSE 692",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_6_AB2",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_6_AB2"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_6_AB3": {
+        "command": "Connect_Card_6_AB3",
+        "verb": "do",
+        "description": "EDAC 1: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+        "scpi": "CLOSE 693",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_6_AB3",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_6_AB3"
+          }
+        },
+        "unverified": false
+      },
+      "Close_Card_7": {
+        "command": "Close_Card_7",
+        "verb": "do",
+        "description": "EDAC 2: close every relay on slot 7",
+        "scpi": "CLOSE 700-799",
+        "subsystem": "General",
+        "group": "Close Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_Card_7",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_Card_7"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_7_AB0": {
+        "command": "Connect_Card_7_AB0",
+        "verb": "do",
+        "description": "EDAC 2: connect bank 0 outputs to AB0 (LEFT SEND)",
+        "scpi": "CLOSE 790",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_7_AB0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_7_AB0"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_7_AB1": {
+        "command": "Connect_Card_7_AB1",
+        "verb": "do",
+        "description": "EDAC 2: connect bank 1 inputs to AB1 (LEFT RETURN)",
+        "scpi": "CLOSE 791",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_7_AB1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_7_AB1"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_7_AB2": {
+        "command": "Connect_Card_7_AB2",
+        "verb": "do",
+        "description": "EDAC 2: connect bank 2 outputs to AB2 (RIGHT SEND)",
+        "scpi": "CLOSE 792",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_7_AB2",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_7_AB2"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_7_AB3": {
+        "command": "Connect_Card_7_AB3",
+        "verb": "do",
+        "description": "EDAC 2: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+        "scpi": "CLOSE 793",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_7_AB3",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_7_AB3"
+          }
+        },
+        "unverified": false
+      },
+      "Close_Card_8": {
+        "command": "Close_Card_8",
+        "verb": "do",
+        "description": "EDAC 3: close every relay on slot 8",
+        "scpi": "CLOSE 800-899",
+        "subsystem": "General",
+        "group": "Close Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_Card_8",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_Card_8"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_8_AB0": {
+        "command": "Connect_Card_8_AB0",
+        "verb": "do",
+        "description": "EDAC 3: connect bank 0 outputs to AB0 (LEFT SEND)",
+        "scpi": "CLOSE 890",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_8_AB0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_8_AB0"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_8_AB1": {
+        "command": "Connect_Card_8_AB1",
+        "verb": "do",
+        "description": "EDAC 3: connect bank 1 inputs to AB1 (LEFT RETURN)",
+        "scpi": "CLOSE 891",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_8_AB1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_8_AB1"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_8_AB2": {
+        "command": "Connect_Card_8_AB2",
+        "verb": "do",
+        "description": "EDAC 3: connect bank 2 outputs to AB2 (RIGHT SEND)",
+        "scpi": "CLOSE 892",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_8_AB2",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_8_AB2"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_8_AB3": {
+        "command": "Connect_Card_8_AB3",
+        "verb": "do",
+        "description": "EDAC 3: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+        "scpi": "CLOSE 893",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_8_AB3",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_8_AB3"
+          }
+        },
+        "unverified": false
+      },
+      "Close_Card_9": {
+        "command": "Close_Card_9",
+        "verb": "do",
+        "description": "Aux: close every relay on slot 9",
+        "scpi": "CLOSE 900-999",
+        "subsystem": "General",
+        "group": "Close Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Close_Card_9",
+          "direction": "in",
+          "payload_format": {
+            "command": "Close_Card_9"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_9_AB0": {
+        "command": "Connect_Card_9_AB0",
+        "verb": "do",
+        "description": "Aux: connect bank 0 outputs to AB0 (LEFT SEND)",
+        "scpi": "CLOSE 990",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_9_AB0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_9_AB0"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_9_AB1": {
+        "command": "Connect_Card_9_AB1",
+        "verb": "do",
+        "description": "Aux: connect bank 1 inputs to AB1 (LEFT RETURN)",
+        "scpi": "CLOSE 991",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_9_AB1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_9_AB1"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_9_AB2": {
+        "command": "Connect_Card_9_AB2",
+        "verb": "do",
+        "description": "Aux: connect bank 2 outputs to AB2 (RIGHT SEND)",
+        "scpi": "CLOSE 992",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_9_AB2",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_9_AB2"
+          }
+        },
+        "unverified": false
+      },
+      "Connect_Card_9_AB3": {
+        "command": "Connect_Card_9_AB3",
+        "verb": "do",
+        "description": "Aux: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+        "scpi": "CLOSE 993",
+        "subsystem": "General",
+        "group": "Backplane Buses",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Connect_Card_9_AB3",
+          "direction": "in",
+          "payload_format": {
+            "command": "Connect_Card_9_AB3"
           }
         },
         "unverified": false
@@ -305,6 +767,27 @@
         },
         "unverified": false
       },
+      "Open_Card_0": {
+        "command": "Open_Card_0",
+        "verb": "do",
+        "description": "Coax Left: open every relay on slot 0",
+        "scpi": "OPEN 000-099",
+        "subsystem": "General",
+        "group": "Open Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Open_Card_0",
+          "direction": "in",
+          "payload_format": {
+            "command": "Open_Card_0"
+          }
+        },
+        "unverified": false
+      },
       "Open_All": {
         "command": "Open_All",
         "verb": "do",
@@ -322,6 +805,111 @@
           "direction": "in",
           "payload_format": {
             "command": "Open_All"
+          }
+        },
+        "unverified": false
+      },
+      "Open_Card_1": {
+        "command": "Open_Card_1",
+        "verb": "do",
+        "description": "Coax Right: open every relay on slot 1",
+        "scpi": "OPEN 100-199",
+        "subsystem": "General",
+        "group": "Open Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Open_Card_1",
+          "direction": "in",
+          "payload_format": {
+            "command": "Open_Card_1"
+          }
+        },
+        "unverified": false
+      },
+      "Open_Card_6": {
+        "command": "Open_Card_6",
+        "verb": "do",
+        "description": "EDAC 1: open every relay on slot 6",
+        "scpi": "OPEN 600-699",
+        "subsystem": "General",
+        "group": "Open Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Open_Card_6",
+          "direction": "in",
+          "payload_format": {
+            "command": "Open_Card_6"
+          }
+        },
+        "unverified": false
+      },
+      "Open_Card_7": {
+        "command": "Open_Card_7",
+        "verb": "do",
+        "description": "EDAC 2: open every relay on slot 7",
+        "scpi": "OPEN 700-799",
+        "subsystem": "General",
+        "group": "Open Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Open_Card_7",
+          "direction": "in",
+          "payload_format": {
+            "command": "Open_Card_7"
+          }
+        },
+        "unverified": false
+      },
+      "Open_Card_8": {
+        "command": "Open_Card_8",
+        "verb": "do",
+        "description": "EDAC 3: open every relay on slot 8",
+        "scpi": "OPEN 800-899",
+        "subsystem": "General",
+        "group": "Open Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Open_Card_8",
+          "direction": "in",
+          "payload_format": {
+            "command": "Open_Card_8"
+          }
+        },
+        "unverified": false
+      },
+      "Open_Card_9": {
+        "command": "Open_Card_9",
+        "verb": "do",
+        "description": "Aux: open every relay on slot 9",
+        "scpi": "OPEN 900-999",
+        "subsystem": "General",
+        "group": "Open Relays",
+        "args": [],
+        "arg": {
+          "kind": "none"
+        },
+        "returns": null,
+        "mqtt": {
+          "topic": "APK.audio/Gui/Komands/Router/Open_Card_9",
+          "direction": "in",
+          "payload_format": {
+            "command": "Open_Card_9"
           }
         },
         "unverified": false

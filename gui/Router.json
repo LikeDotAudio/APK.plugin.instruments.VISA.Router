@@ -215,6 +215,139 @@
               }
             }
           }
+        },
+        "Card_0_All": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "Coax Left — every relay on slot 0",
+            "Fr": "Coax Left — every relay on slot 0",
+            "De": "Coax Left — every relay on slot 0",
+            "Es": "Coax Left — every relay on slot 0",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Open_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "OPEN ALL  —  OPEN 000-099",
+                    "Fr": "OPEN ALL  —  OPEN 000-099",
+                    "De": "OPEN ALL  —  OPEN 000-099",
+                    "Es": "OPEN ALL  —  OPEN 000-099"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FFD400"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FFD400",
+                  "bg_color": "#000000",
+                  "border_color": "#FFD400",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on Coax Left (slot 0) open.",
+                "Fr": "Every relay on Coax Left (slot 0) open.",
+                "De": "Every relay on Coax Left (slot 0) open.",
+                "Es": "Every relay on Coax Left (slot 0) open."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Open_Card_0",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Close_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CLOSE ALL  —  CLOSE 000-099",
+                    "Fr": "CLOSE ALL  —  CLOSE 000-099",
+                    "De": "CLOSE ALL  —  CLOSE 000-099",
+                    "Es": "CLOSE ALL  —  CLOSE 000-099"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FF6B6B"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF6B6B",
+                  "bg_color": "#000000",
+                  "border_color": "#FF6B6B",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on Coax Left (slot 0) closed — every channel, bank tie and bus relay on the card.",
+                "Fr": "Every relay on Coax Left (slot 0) closed — every channel, bank tie and bus relay on the card.",
+                "De": "Every relay on Coax Left (slot 0) closed — every channel, bank tie and bus relay on the card.",
+                "Es": "Every relay on Coax Left (slot 0) closed — every channel, bank tie and bus relay on the card."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Close_Card_0",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
         }
       },
       "fields": {
@@ -435,6 +568,139 @@
                 "sub_path": "Routing",
                 "command": "Close_Channels",
                 "input_name": "channel_list",
+                "converter": ""
+              }
+            }
+          }
+        },
+        "Card_1_All": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "Coax Right — every relay on slot 1",
+            "Fr": "Coax Right — every relay on slot 1",
+            "De": "Coax Right — every relay on slot 1",
+            "Es": "Coax Right — every relay on slot 1",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Open_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "OPEN ALL  —  OPEN 100-199",
+                    "Fr": "OPEN ALL  —  OPEN 100-199",
+                    "De": "OPEN ALL  —  OPEN 100-199",
+                    "Es": "OPEN ALL  —  OPEN 100-199"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FFD400"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FFD400",
+                  "bg_color": "#000000",
+                  "border_color": "#FFD400",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on Coax Right (slot 1) open.",
+                "Fr": "Every relay on Coax Right (slot 1) open.",
+                "De": "Every relay on Coax Right (slot 1) open.",
+                "Es": "Every relay on Coax Right (slot 1) open."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Open_Card_1",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Close_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CLOSE ALL  —  CLOSE 100-199",
+                    "Fr": "CLOSE ALL  —  CLOSE 100-199",
+                    "De": "CLOSE ALL  —  CLOSE 100-199",
+                    "Es": "CLOSE ALL  —  CLOSE 100-199"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FF6B6B"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF6B6B",
+                  "bg_color": "#000000",
+                  "border_color": "#FF6B6B",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on Coax Right (slot 1) closed — every channel, bank tie and bus relay on the card.",
+                "Fr": "Every relay on Coax Right (slot 1) closed — every channel, bank tie and bus relay on the card.",
+                "De": "Every relay on Coax Right (slot 1) closed — every channel, bank tie and bus relay on the card.",
+                "Es": "Every relay on Coax Right (slot 1) closed — every channel, bank tie and bus relay on the card."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Close_Card_1",
+                "input_name": "",
                 "converter": ""
               }
             }
@@ -1421,6 +1687,388 @@
               "komand_seed": false
             }
           }
+        },
+        "Card_6_Bus_Connect": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 1 — connect to the backplane buses",
+            "Fr": "EDAC 1 — connect to the backplane buses",
+            "De": "EDAC 1 — connect to the backplane buses",
+            "Es": "EDAC 1 — connect to the backplane buses",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Connect_AB0": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 690",
+                    "Fr": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 690",
+                    "De": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 690",
+                    "Es": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 690"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 1 bank 0 (outputs, relays 600–609) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 690; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 1 bank 0 (outputs, relays 600–609) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 690; nothing opens it but OPEN ALL.",
+                "De": "EDAC 1 bank 0 (outputs, relays 600–609) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 690; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 1 bank 0 (outputs, relays 600–609) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 690; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_6_AB0",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB1": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 691",
+                    "Fr": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 691",
+                    "De": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 691",
+                    "Es": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 691"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 1 bank 1 (inputs, relays 610–619) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 691; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 1 bank 1 (inputs, relays 610–619) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 691; nothing opens it but OPEN ALL.",
+                "De": "EDAC 1 bank 1 (inputs, relays 610–619) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 691; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 1 bank 1 (inputs, relays 610–619) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 691; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_6_AB1",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB2": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 692",
+                    "Fr": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 692",
+                    "De": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 692",
+                    "Es": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 692"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 1 bank 2 (outputs, relays 620–629) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 692; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 1 bank 2 (outputs, relays 620–629) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 692; nothing opens it but OPEN ALL.",
+                "De": "EDAC 1 bank 2 (outputs, relays 620–629) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 692; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 1 bank 2 (outputs, relays 620–629) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 692; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_6_AB2",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB3": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 693",
+                    "Fr": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 693",
+                    "De": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 693",
+                    "Es": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 693"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 1 bank 3 (inputs, relays 630–639) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 693; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 1 bank 3 (inputs, relays 630–639) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 693; nothing opens it but OPEN ALL.",
+                "De": "EDAC 1 bank 3 (inputs, relays 630–639) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 693; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 1 bank 3 (inputs, relays 630–639) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 693; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_6_AB3",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
+        },
+        "Card_6_All": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 1 — every relay on slot 6",
+            "Fr": "EDAC 1 — every relay on slot 6",
+            "De": "EDAC 1 — every relay on slot 6",
+            "Es": "EDAC 1 — every relay on slot 6",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Open_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "OPEN ALL  —  OPEN 600-699",
+                    "Fr": "OPEN ALL  —  OPEN 600-699",
+                    "De": "OPEN ALL  —  OPEN 600-699",
+                    "Es": "OPEN ALL  —  OPEN 600-699"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FFD400"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FFD400",
+                  "bg_color": "#000000",
+                  "border_color": "#FFD400",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on EDAC 1 (slot 6) open.",
+                "Fr": "Every relay on EDAC 1 (slot 6) open.",
+                "De": "Every relay on EDAC 1 (slot 6) open.",
+                "Es": "Every relay on EDAC 1 (slot 6) open."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Open_Card_6",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Close_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CLOSE ALL  —  CLOSE 600-699",
+                    "Fr": "CLOSE ALL  —  CLOSE 600-699",
+                    "De": "CLOSE ALL  —  CLOSE 600-699",
+                    "Es": "CLOSE ALL  —  CLOSE 600-699"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FF6B6B"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF6B6B",
+                  "bg_color": "#000000",
+                  "border_color": "#FF6B6B",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on EDAC 1 (slot 6) closed — every channel, bank tie and bus relay on the card.",
+                "Fr": "Every relay on EDAC 1 (slot 6) closed — every channel, bank tie and bus relay on the card.",
+                "De": "Every relay on EDAC 1 (slot 6) closed — every channel, bank tie and bus relay on the card.",
+                "Es": "Every relay on EDAC 1 (slot 6) closed — every channel, bank tie and bus relay on the card."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Close_Card_6",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
         }
       }
     },
@@ -2401,6 +3049,388 @@
               "komand_seed": false
             }
           }
+        },
+        "Card_7_Bus_Connect": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 2 — connect to the backplane buses",
+            "Fr": "EDAC 2 — connect to the backplane buses",
+            "De": "EDAC 2 — connect to the backplane buses",
+            "Es": "EDAC 2 — connect to the backplane buses",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Connect_AB0": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 790",
+                    "Fr": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 790",
+                    "De": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 790",
+                    "Es": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 790"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 2 bank 0 (outputs, relays 700–709) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 790; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 2 bank 0 (outputs, relays 700–709) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 790; nothing opens it but OPEN ALL.",
+                "De": "EDAC 2 bank 0 (outputs, relays 700–709) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 790; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 2 bank 0 (outputs, relays 700–709) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 790; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_7_AB0",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB1": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 791",
+                    "Fr": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 791",
+                    "De": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 791",
+                    "Es": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 791"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 2 bank 1 (inputs, relays 710–719) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 791; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 2 bank 1 (inputs, relays 710–719) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 791; nothing opens it but OPEN ALL.",
+                "De": "EDAC 2 bank 1 (inputs, relays 710–719) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 791; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 2 bank 1 (inputs, relays 710–719) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 791; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_7_AB1",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB2": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 792",
+                    "Fr": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 792",
+                    "De": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 792",
+                    "Es": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 792"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 2 bank 2 (outputs, relays 720–729) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 792; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 2 bank 2 (outputs, relays 720–729) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 792; nothing opens it but OPEN ALL.",
+                "De": "EDAC 2 bank 2 (outputs, relays 720–729) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 792; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 2 bank 2 (outputs, relays 720–729) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 792; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_7_AB2",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB3": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 793",
+                    "Fr": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 793",
+                    "De": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 793",
+                    "Es": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 793"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 2 bank 3 (inputs, relays 730–739) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 793; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 2 bank 3 (inputs, relays 730–739) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 793; nothing opens it but OPEN ALL.",
+                "De": "EDAC 2 bank 3 (inputs, relays 730–739) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 793; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 2 bank 3 (inputs, relays 730–739) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 793; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_7_AB3",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
+        },
+        "Card_7_All": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 2 — every relay on slot 7",
+            "Fr": "EDAC 2 — every relay on slot 7",
+            "De": "EDAC 2 — every relay on slot 7",
+            "Es": "EDAC 2 — every relay on slot 7",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Open_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "OPEN ALL  —  OPEN 700-799",
+                    "Fr": "OPEN ALL  —  OPEN 700-799",
+                    "De": "OPEN ALL  —  OPEN 700-799",
+                    "Es": "OPEN ALL  —  OPEN 700-799"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FFD400"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FFD400",
+                  "bg_color": "#000000",
+                  "border_color": "#FFD400",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on EDAC 2 (slot 7) open.",
+                "Fr": "Every relay on EDAC 2 (slot 7) open.",
+                "De": "Every relay on EDAC 2 (slot 7) open.",
+                "Es": "Every relay on EDAC 2 (slot 7) open."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Open_Card_7",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Close_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CLOSE ALL  —  CLOSE 700-799",
+                    "Fr": "CLOSE ALL  —  CLOSE 700-799",
+                    "De": "CLOSE ALL  —  CLOSE 700-799",
+                    "Es": "CLOSE ALL  —  CLOSE 700-799"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FF6B6B"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF6B6B",
+                  "bg_color": "#000000",
+                  "border_color": "#FF6B6B",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on EDAC 2 (slot 7) closed — every channel, bank tie and bus relay on the card.",
+                "Fr": "Every relay on EDAC 2 (slot 7) closed — every channel, bank tie and bus relay on the card.",
+                "De": "Every relay on EDAC 2 (slot 7) closed — every channel, bank tie and bus relay on the card.",
+                "Es": "Every relay on EDAC 2 (slot 7) closed — every channel, bank tie and bus relay on the card."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Close_Card_7",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
         }
       }
     },
@@ -3379,6 +4409,388 @@
                 "converter": ""
               },
               "komand_seed": false
+            }
+          }
+        },
+        "Card_8_Bus_Connect": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 3 — connect to the backplane buses",
+            "Fr": "EDAC 3 — connect to the backplane buses",
+            "De": "EDAC 3 — connect to the backplane buses",
+            "Es": "EDAC 3 — connect to the backplane buses",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Connect_AB0": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 890",
+                    "Fr": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 890",
+                    "De": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 890",
+                    "Es": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 890"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 3 bank 0 (outputs, relays 800–809) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 890; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 3 bank 0 (outputs, relays 800–809) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 890; nothing opens it but OPEN ALL.",
+                "De": "EDAC 3 bank 0 (outputs, relays 800–809) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 890; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 3 bank 0 (outputs, relays 800–809) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 890; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_8_AB0",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB1": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 891",
+                    "Fr": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 891",
+                    "De": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 891",
+                    "Es": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 891"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 3 bank 1 (inputs, relays 810–819) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 891; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 3 bank 1 (inputs, relays 810–819) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 891; nothing opens it but OPEN ALL.",
+                "De": "EDAC 3 bank 1 (inputs, relays 810–819) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 891; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 3 bank 1 (inputs, relays 810–819) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 891; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_8_AB1",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB2": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 892",
+                    "Fr": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 892",
+                    "De": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 892",
+                    "Es": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 892"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 3 bank 2 (outputs, relays 820–829) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 892; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 3 bank 2 (outputs, relays 820–829) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 892; nothing opens it but OPEN ALL.",
+                "De": "EDAC 3 bank 2 (outputs, relays 820–829) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 892; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 3 bank 2 (outputs, relays 820–829) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 892; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_8_AB2",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB3": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 893",
+                    "Fr": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 893",
+                    "De": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 893",
+                    "Es": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 893"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "EDAC 3 bank 3 (inputs, relays 830–839) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 893; nothing opens it but OPEN ALL.",
+                "Fr": "EDAC 3 bank 3 (inputs, relays 830–839) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 893; nothing opens it but OPEN ALL.",
+                "De": "EDAC 3 bank 3 (inputs, relays 830–839) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 893; nothing opens it but OPEN ALL.",
+                "Es": "EDAC 3 bank 3 (inputs, relays 830–839) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 893; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_8_AB3",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
+        },
+        "Card_8_All": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "EDAC 3 — every relay on slot 8",
+            "Fr": "EDAC 3 — every relay on slot 8",
+            "De": "EDAC 3 — every relay on slot 8",
+            "Es": "EDAC 3 — every relay on slot 8",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Open_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "OPEN ALL  —  OPEN 800-899",
+                    "Fr": "OPEN ALL  —  OPEN 800-899",
+                    "De": "OPEN ALL  —  OPEN 800-899",
+                    "Es": "OPEN ALL  —  OPEN 800-899"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FFD400"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FFD400",
+                  "bg_color": "#000000",
+                  "border_color": "#FFD400",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on EDAC 3 (slot 8) open.",
+                "Fr": "Every relay on EDAC 3 (slot 8) open.",
+                "De": "Every relay on EDAC 3 (slot 8) open.",
+                "Es": "Every relay on EDAC 3 (slot 8) open."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Open_Card_8",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Close_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CLOSE ALL  —  CLOSE 800-899",
+                    "Fr": "CLOSE ALL  —  CLOSE 800-899",
+                    "De": "CLOSE ALL  —  CLOSE 800-899",
+                    "Es": "CLOSE ALL  —  CLOSE 800-899"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FF6B6B"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF6B6B",
+                  "bg_color": "#000000",
+                  "border_color": "#FF6B6B",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on EDAC 3 (slot 8) closed — every channel, bank tie and bus relay on the card.",
+                "Fr": "Every relay on EDAC 3 (slot 8) closed — every channel, bank tie and bus relay on the card.",
+                "De": "Every relay on EDAC 3 (slot 8) closed — every channel, bank tie and bus relay on the card.",
+                "Es": "Every relay on EDAC 3 (slot 8) closed — every channel, bank tie and bus relay on the card."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Close_Card_8",
+                "input_name": "",
+                "converter": ""
+              }
             }
           }
         }
@@ -4627,6 +6039,388 @@
                 "width": 100
               },
               "komand_seed": false
+            }
+          }
+        },
+        "Card_9_Bus_Connect": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "Aux — connect to the backplane buses",
+            "Fr": "Aux — connect to the backplane buses",
+            "De": "Aux — connect to the backplane buses",
+            "Es": "Aux — connect to the backplane buses",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Connect_AB0": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 990",
+                    "Fr": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 990",
+                    "De": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 990",
+                    "Es": "CONNECT OUTPUTS → LEFT SEND (AB0)  —  CLOSE 990"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Aux bank 0 (outputs, relays 900–909) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 990; nothing opens it but OPEN ALL.",
+                "Fr": "Aux bank 0 (outputs, relays 900–909) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 990; nothing opens it but OPEN ALL.",
+                "De": "Aux bank 0 (outputs, relays 900–909) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 990; nothing opens it but OPEN ALL.",
+                "Es": "Aux bank 0 (outputs, relays 900–909) onto backplane bus AB0 — Signal Gen Left · stimulus · LEFT SEND. Closes backplane relay 990; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_9_AB0",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB1": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 991",
+                    "Fr": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 991",
+                    "De": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 991",
+                    "Es": "CONNECT INPUTS ← LEFT RETURN (AB1)  —  CLOSE 991"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Aux bank 1 (inputs, relays 910–919) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 991; nothing opens it but OPEN ALL.",
+                "Fr": "Aux bank 1 (inputs, relays 910–919) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 991; nothing opens it but OPEN ALL.",
+                "De": "Aux bank 1 (inputs, relays 910–919) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 991; nothing opens it but OPEN ALL.",
+                "Es": "Aux bank 1 (inputs, relays 910–919) onto backplane bus AB1 — Test Dest Left · measurement · LEFT RETURN. Closes backplane relay 991; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_9_AB1",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB2": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 992",
+                    "Fr": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 992",
+                    "De": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 992",
+                    "Es": "CONNECT OUTPUTS → RIGHT SEND (AB2)  —  CLOSE 992"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Aux bank 2 (outputs, relays 920–929) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 992; nothing opens it but OPEN ALL.",
+                "Fr": "Aux bank 2 (outputs, relays 920–929) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 992; nothing opens it but OPEN ALL.",
+                "De": "Aux bank 2 (outputs, relays 920–929) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 992; nothing opens it but OPEN ALL.",
+                "Es": "Aux bank 2 (outputs, relays 920–929) onto backplane bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. Closes backplane relay 992; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_9_AB2",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Connect_AB3": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 993",
+                    "Fr": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 993",
+                    "De": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 993",
+                    "Es": "CONNECT INPUTS ← RIGHT RETURN (AB3)  —  CLOSE 993"
+                  },
+                  "text_size": 13,
+                  "text_color": "#33CCFF"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#33CCFF",
+                  "bg_color": "#000000",
+                  "border_color": "#33CCFF",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Aux bank 3 (inputs, relays 930–939) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 993; nothing opens it but OPEN ALL.",
+                "Fr": "Aux bank 3 (inputs, relays 930–939) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 993; nothing opens it but OPEN ALL.",
+                "De": "Aux bank 3 (inputs, relays 930–939) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 993; nothing opens it but OPEN ALL.",
+                "Es": "Aux bank 3 (inputs, relays 930–939) onto backplane bus AB3 — Test Dest Right · measurement · RIGHT RETURN. Closes backplane relay 993; nothing opens it but OPEN ALL."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Connect_Card_9_AB3",
+                "input_name": "",
+                "converter": ""
+              }
+            }
+          }
+        },
+        "Card_9_All": {
+          "type": "OcaBlock",
+          "description": {
+            "En": "Aux — every relay on slot 9",
+            "Fr": "Aux — every relay on slot 9",
+            "De": "Aux — every relay on slot 9",
+            "Es": "Aux — every relay on slot 9",
+            "show_label": true
+          },
+          "layout_columns": 2,
+          "layout": {
+            "pady": 4,
+            "sticky": "nsew"
+          },
+          "fields": {
+            "Open_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "OPEN ALL  —  OPEN 900-999",
+                    "Fr": "OPEN ALL  —  OPEN 900-999",
+                    "De": "OPEN ALL  —  OPEN 900-999",
+                    "Es": "OPEN ALL  —  OPEN 900-999"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FFD400"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FFD400",
+                  "bg_color": "#000000",
+                  "border_color": "#FFD400",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on Aux (slot 9) open.",
+                "Fr": "Every relay on Aux (slot 9) open.",
+                "De": "Every relay on Aux (slot 9) open.",
+                "Es": "Every relay on Aux (slot 9) open."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Open_Card_9",
+                "input_name": "",
+                "converter": ""
+              }
+            },
+            "Close_All": {
+              "type": "_GuiActuator",
+              "AES70": "OcaBooleanActuator",
+              "label": {
+                "inactive": {
+                  "text": {
+                    "En": "CLOSE ALL  —  CLOSE 900-999",
+                    "Fr": "CLOSE ALL  —  CLOSE 900-999",
+                    "De": "CLOSE ALL  —  CLOSE 900-999",
+                    "Es": "CLOSE ALL  —  CLOSE 900-999"
+                  },
+                  "text_size": 13,
+                  "text_color": "#FF6B6B"
+                }
+              },
+              "layout": {
+                "height": 44,
+                "width": "100%",
+                "stretch": "width",
+                "font": 13,
+                "padx": 4,
+                "pady": 6
+              },
+              "style": {
+                "active": {
+                  "font_style": "bold",
+                  "font_size": null,
+                  "text_color": "#FF6B6B",
+                  "bg_color": "#000000",
+                  "border_color": "#FF6B6B",
+                  "border_thickness": 2,
+                  "glow_intensity": 1.944
+                },
+                "inactive": {
+                  "font_style": "normal",
+                  "font_size": null,
+                  "text_color": "#888888",
+                  "bg_color": "#2b2b2b",
+                  "border_color": "#555555",
+                  "border_thickness": 2,
+                  "glow_intensity": 0
+                }
+              },
+              "description": {
+                "En": "Every relay on Aux (slot 9) closed — every channel, bank tie and bus relay on the card.",
+                "Fr": "Every relay on Aux (slot 9) closed — every channel, bank tie and bus relay on the card.",
+                "De": "Every relay on Aux (slot 9) closed — every channel, bank tie and bus relay on the card.",
+                "Es": "Every relay on Aux (slot 9) closed — every channel, bank tie and bus relay on the card."
+              },
+              "komand_handler": {
+                "enable": true,
+                "komand_type": "do",
+                "sub_path": "Router",
+                "command": "Close_Card_9",
+                "input_name": "",
+                "converter": ""
+              }
             }
           }
         }

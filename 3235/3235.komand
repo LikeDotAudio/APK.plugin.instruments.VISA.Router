@@ -27,12 +27,144 @@
     }
   },
   "do": {
+    "Close_Card_0": {
+      "scpi": "CLOSE 000-099",
+      "description": "Coax Left: close every relay on slot 0",
+      "group": "Close Relays",
+      "notes": "Every relay of the card in slot 0 closed — its bank ties and backplane relays too, so every channel on it is tied to every other and to all four buses. Pressed only by a person."
+    },
     "Close_All": {
       "scpi": "CLOSE 000-999",
       "description": "Close every relay in the frame — everything connected to everything.",
       "group": "System Reset & Control",
       "subsystem": "Root",
       "notes": "The other half of THE HOUR's chak-chuck (3235.gui `declared.on_the_hour`): every relay pulls in, then Open_All lets every one go, so the frame is heard to work at exactly the top of each hour and is left with nothing connected. Never sent on its own by anything automatic — left closed it ties every input to every output."
+    },
+    "Close_Card_1": {
+      "scpi": "CLOSE 100-199",
+      "description": "Coax Right: close every relay on slot 1",
+      "group": "Close Relays",
+      "notes": "Every relay of the card in slot 1 closed — its bank ties and backplane relays too, so every channel on it is tied to every other and to all four buses. Pressed only by a person."
+    },
+    "Close_Card_6": {
+      "scpi": "CLOSE 600-699",
+      "description": "EDAC 1: close every relay on slot 6",
+      "group": "Close Relays",
+      "notes": "Every relay of the card in slot 6 closed — its bank ties and backplane relays too, so every channel on it is tied to every other and to all four buses. Pressed only by a person."
+    },
+    "Connect_Card_6_AB0": {
+      "scpi": "CLOSE 690",
+      "description": "EDAC 1: connect bank 0 outputs to AB0 (LEFT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 6 backplane relay 90 (channel 690), tying the card's bank 0 common to analog bus AB0 — Signal Gen Left · stimulus · LEFT SEND. From gui/Cards.json (bank 0 bus AB0, bus_relay 90). Pressed only by a person."
+    },
+    "Connect_Card_6_AB1": {
+      "scpi": "CLOSE 691",
+      "description": "EDAC 1: connect bank 1 inputs to AB1 (LEFT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 6 backplane relay 91 (channel 691), tying the card's bank 1 common to analog bus AB1 — Test Dest Left · measurement · LEFT RETURN. From gui/Cards.json (bank 1 bus AB1, bus_relay 91). Pressed only by a person."
+    },
+    "Connect_Card_6_AB2": {
+      "scpi": "CLOSE 692",
+      "description": "EDAC 1: connect bank 2 outputs to AB2 (RIGHT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 6 backplane relay 92 (channel 692), tying the card's bank 2 common to analog bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. From gui/Cards.json (bank 2 bus AB2, bus_relay 92). Pressed only by a person."
+    },
+    "Connect_Card_6_AB3": {
+      "scpi": "CLOSE 693",
+      "description": "EDAC 1: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 6 backplane relay 93 (channel 693), tying the card's bank 3 common to analog bus AB3 — Test Dest Right · measurement · RIGHT RETURN. From gui/Cards.json (bank 3 bus AB3, bus_relay 93). Pressed only by a person."
+    },
+    "Close_Card_7": {
+      "scpi": "CLOSE 700-799",
+      "description": "EDAC 2: close every relay on slot 7",
+      "group": "Close Relays",
+      "notes": "Every relay of the card in slot 7 closed — its bank ties and backplane relays too, so every channel on it is tied to every other and to all four buses. Pressed only by a person."
+    },
+    "Connect_Card_7_AB0": {
+      "scpi": "CLOSE 790",
+      "description": "EDAC 2: connect bank 0 outputs to AB0 (LEFT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 7 backplane relay 90 (channel 790), tying the card's bank 0 common to analog bus AB0 — Signal Gen Left · stimulus · LEFT SEND. From gui/Cards.json (bank 0 bus AB0, bus_relay 90). Pressed only by a person."
+    },
+    "Connect_Card_7_AB1": {
+      "scpi": "CLOSE 791",
+      "description": "EDAC 2: connect bank 1 inputs to AB1 (LEFT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 7 backplane relay 91 (channel 791), tying the card's bank 1 common to analog bus AB1 — Test Dest Left · measurement · LEFT RETURN. From gui/Cards.json (bank 1 bus AB1, bus_relay 91). Pressed only by a person."
+    },
+    "Connect_Card_7_AB2": {
+      "scpi": "CLOSE 792",
+      "description": "EDAC 2: connect bank 2 outputs to AB2 (RIGHT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 7 backplane relay 92 (channel 792), tying the card's bank 2 common to analog bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. From gui/Cards.json (bank 2 bus AB2, bus_relay 92). Pressed only by a person."
+    },
+    "Connect_Card_7_AB3": {
+      "scpi": "CLOSE 793",
+      "description": "EDAC 2: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 7 backplane relay 93 (channel 793), tying the card's bank 3 common to analog bus AB3 — Test Dest Right · measurement · RIGHT RETURN. From gui/Cards.json (bank 3 bus AB3, bus_relay 93). Pressed only by a person."
+    },
+    "Close_Card_8": {
+      "scpi": "CLOSE 800-899",
+      "description": "EDAC 3: close every relay on slot 8",
+      "group": "Close Relays",
+      "notes": "Every relay of the card in slot 8 closed — its bank ties and backplane relays too, so every channel on it is tied to every other and to all four buses. Pressed only by a person."
+    },
+    "Connect_Card_8_AB0": {
+      "scpi": "CLOSE 890",
+      "description": "EDAC 3: connect bank 0 outputs to AB0 (LEFT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 8 backplane relay 90 (channel 890), tying the card's bank 0 common to analog bus AB0 — Signal Gen Left · stimulus · LEFT SEND. From gui/Cards.json (bank 0 bus AB0, bus_relay 90). Pressed only by a person."
+    },
+    "Connect_Card_8_AB1": {
+      "scpi": "CLOSE 891",
+      "description": "EDAC 3: connect bank 1 inputs to AB1 (LEFT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 8 backplane relay 91 (channel 891), tying the card's bank 1 common to analog bus AB1 — Test Dest Left · measurement · LEFT RETURN. From gui/Cards.json (bank 1 bus AB1, bus_relay 91). Pressed only by a person."
+    },
+    "Connect_Card_8_AB2": {
+      "scpi": "CLOSE 892",
+      "description": "EDAC 3: connect bank 2 outputs to AB2 (RIGHT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 8 backplane relay 92 (channel 892), tying the card's bank 2 common to analog bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. From gui/Cards.json (bank 2 bus AB2, bus_relay 92). Pressed only by a person."
+    },
+    "Connect_Card_8_AB3": {
+      "scpi": "CLOSE 893",
+      "description": "EDAC 3: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 8 backplane relay 93 (channel 893), tying the card's bank 3 common to analog bus AB3 — Test Dest Right · measurement · RIGHT RETURN. From gui/Cards.json (bank 3 bus AB3, bus_relay 93). Pressed only by a person."
+    },
+    "Close_Card_9": {
+      "scpi": "CLOSE 900-999",
+      "description": "Aux: close every relay on slot 9",
+      "group": "Close Relays",
+      "notes": "Every relay of the card in slot 9 closed — its bank ties and backplane relays too, so every channel on it is tied to every other and to all four buses. Pressed only by a person."
+    },
+    "Connect_Card_9_AB0": {
+      "scpi": "CLOSE 990",
+      "description": "Aux: connect bank 0 outputs to AB0 (LEFT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 9 backplane relay 90 (channel 990), tying the card's bank 0 common to analog bus AB0 — Signal Gen Left · stimulus · LEFT SEND. From gui/Cards.json (bank 0 bus AB0, bus_relay 90). Pressed only by a person."
+    },
+    "Connect_Card_9_AB1": {
+      "scpi": "CLOSE 991",
+      "description": "Aux: connect bank 1 inputs to AB1 (LEFT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 9 backplane relay 91 (channel 991), tying the card's bank 1 common to analog bus AB1 — Test Dest Left · measurement · LEFT RETURN. From gui/Cards.json (bank 1 bus AB1, bus_relay 91). Pressed only by a person."
+    },
+    "Connect_Card_9_AB2": {
+      "scpi": "CLOSE 992",
+      "description": "Aux: connect bank 2 outputs to AB2 (RIGHT SEND)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 9 backplane relay 92 (channel 992), tying the card's bank 2 common to analog bus AB2 — Signal Gen Right · stimulus · RIGHT SEND. From gui/Cards.json (bank 2 bus AB2, bus_relay 92). Pressed only by a person."
+    },
+    "Connect_Card_9_AB3": {
+      "scpi": "CLOSE 993",
+      "description": "Aux: connect bank 3 inputs to AB3 (RIGHT RETURN)",
+      "group": "Backplane Buses",
+      "notes": "Closes slot 9 backplane relay 93 (channel 993), tying the card's bank 3 common to analog bus AB3 — Test Dest Right · measurement · RIGHT RETURN. From gui/Cards.json (bank 3 bus AB3, bus_relay 93). Pressed only by a person."
     },
     "Clear_State": {
       "scpi": "CLR",
@@ -45,12 +177,48 @@
       "description": "Card Reset",
       "group": "System Reset & Control"
     },
+    "Open_Card_0": {
+      "scpi": "OPEN 000-099",
+      "description": "Coax Left: open every relay on slot 0",
+      "group": "Open Relays",
+      "notes": "Every relay of the card in slot 0, its bank ties and backplane relays included, open — the card connected to nothing. The same range form as Open_All, over one slot."
+    },
     "Open_All": {
       "scpi": "OPEN 000-999",
       "description": "Open every relay in the frame — nothing connected to anything.",
       "group": "System Reset & Control",
       "subsystem": "Root",
       "notes": "The 3235 has no clear-all: `CLR` clears the STATE, `RESET` restarts the unit, and neither is defined as leaving every crosspoint open. A range across the whole address space is, and it says exactly what it does. Sent as the panel comes up so the matrix starts from a known state rather than from whatever was left closed. Verified on the bench 2026-08-08 against TCPIP::44.44.44.222::gpib7,10::INSTR."
+    },
+    "Open_Card_1": {
+      "scpi": "OPEN 100-199",
+      "description": "Coax Right: open every relay on slot 1",
+      "group": "Open Relays",
+      "notes": "Every relay of the card in slot 1, its bank ties and backplane relays included, open — the card connected to nothing. The same range form as Open_All, over one slot."
+    },
+    "Open_Card_6": {
+      "scpi": "OPEN 600-699",
+      "description": "EDAC 1: open every relay on slot 6",
+      "group": "Open Relays",
+      "notes": "Every relay of the card in slot 6, its bank ties and backplane relays included, open — the card connected to nothing. The same range form as Open_All, over one slot."
+    },
+    "Open_Card_7": {
+      "scpi": "OPEN 700-799",
+      "description": "EDAC 2: open every relay on slot 7",
+      "group": "Open Relays",
+      "notes": "Every relay of the card in slot 7, its bank ties and backplane relays included, open — the card connected to nothing. The same range form as Open_All, over one slot."
+    },
+    "Open_Card_8": {
+      "scpi": "OPEN 800-899",
+      "description": "EDAC 3: open every relay on slot 8",
+      "group": "Open Relays",
+      "notes": "Every relay of the card in slot 8, its bank ties and backplane relays included, open — the card connected to nothing. The same range form as Open_All, over one slot."
+    },
+    "Open_Card_9": {
+      "scpi": "OPEN 900-999",
+      "description": "Aux: open every relay on slot 9",
+      "group": "Open Relays",
+      "notes": "Every relay of the card in slot 9, its bank ties and backplane relays included, open — the card connected to nothing. The same range form as Open_All, over one slot."
     },
     "Reset_Device": {
       "scpi": "RESET",
