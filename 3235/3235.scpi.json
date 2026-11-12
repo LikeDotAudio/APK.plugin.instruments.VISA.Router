@@ -1,0 +1,18 @@
+{
+  "model": "3235",
+  "manual": "HP 3235A Switch/Test Unit User's Reference Manual — its own command language, not SCPI",
+  "native": true,
+  "roots": [
+    "CLOSE",
+    "OPEN",
+    "CLR",
+    "CRESET",
+    "ID",
+    "RESET",
+    "SELECT",
+    "CHEN",
+    "CHAN"
+  ],
+  "optional": [],
+  "unresolved": {}
+}
