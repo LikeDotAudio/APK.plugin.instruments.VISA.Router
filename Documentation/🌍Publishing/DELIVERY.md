@@ -12,6 +12,7 @@ From this repository's own commits (the commit message is the record):
 - ROAD-3667: Router.cad.json's terminals and capture points on the frame's slots (`24f6930`)
 - tables: <Model>.scpi.json — the model's own SCPI tree for scpi_paths.py (`02326a6`)
 - docs: SDK pages regenerated (ROAD-3683) (`2adba49`)
+- wiki: lanes, README and smoke result refreshed (wiki.py + smoke.py) (`b6c14a0`)
 
 ## Releases
 - **Released `2.0.0`, tag `v2.0.0`** (2026-11-05, ROAD-3452, the owner's V2) — no SDK pin; every manifest says 2.0.0; GitHub release `v2.0.0`.
